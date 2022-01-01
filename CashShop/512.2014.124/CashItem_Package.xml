@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2010 - 2018 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<CashItemPackage>
+	<Package GUID="0" ID="0" ItemSequence="0" UniqueID1="973" UniqueID2="1304" Description="Scroll Master of Health - 1 Day" />
+	<Package GUID="1" ID="0" ItemSequence="1" UniqueID1="1161" UniqueID2="1814" Description="Scroll Master of Strenghener - 1 Day" />
+	<Package GUID="2" ID="0" ItemSequence="2" UniqueID1="1152" UniqueID2="1778" Description="Scroll of Swiftness Master - 1 Day" />
+	<Package GUID="3" ID="0" ItemSequence="3" UniqueID1="1149" UniqueID2="1766" Description="Scroll Master of Recovery - 1 Day" />
+	<Package GUID="4" ID="0" ItemSequence="4" UniqueID1="971" UniqueID2="1296" Description="Scroll Master of Defense - 1 Day" />
+	<Package GUID="0" ID="2" ItemSequence="0" UniqueID1="1200" UniqueID2="1889" Description="1st Lucky Armor Ticket" />
+	<Package GUID="1" ID="2" ItemSequence="1" UniqueID1="1201" UniqueID2="1891" Description="1st Lucky Pants Ticket" />
+	<Package GUID="2" ID="2" ItemSequence="2" UniqueID1="1202" UniqueID2="1893" Description="1st Lucky Helm Ticket" />
+	<Package GUID="3" ID="2" ItemSequence="3" UniqueID1="1203" UniqueID2="1895" Description="1st Lucky Gloves Ticket" />
+	<Package GUID="4" ID="2" ItemSequence="4" UniqueID1="1204" UniqueID2="1897" Description="1st Lucky Boots Ticket" />
+	<Package GUID="0" ID="4" ItemSequence="0" UniqueID1="1205" UniqueID2="1899" Description="2nd Lucky Armor Ticket" />
+	<Package GUID="1" ID="4" ItemSequence="1" UniqueID1="1207" UniqueID2="1903" Description="2nd Lucky Pants Ticket" />
+	<Package GUID="2" ID="4" ItemSequence="2" UniqueID1="1209" UniqueID2="1907" Description="2nd Lucky Gloves Ticket" />
+	<Package GUID="3" ID="4" ItemSequence="3" UniqueID1="1210" UniqueID2="1909" Description="2nd Lucky Boots Ticket" />
+	<Package GUID="4" ID="4" ItemSequence="4" UniqueID1="1208" UniqueID2="1905" Description="2nd Lucky Helm Ticket" />
+	<Package GUID="0" ID="9" ItemSequence="0" UniqueID1="1146" UniqueID2="1754" Description="Scroll Master of Health - 1 Day" />
+	<Package GUID="1" ID="9" ItemSequence="1" UniqueID1="1161" UniqueID2="1814" Description="Scroll Master of Strenghener - 1 Day" />
+	<Package GUID="2" ID="9" ItemSequence="2" UniqueID1="1152" UniqueID2="1778" Description="Scroll of Swiftness Master - 1 Day" />
+	<Package GUID="3" ID="9" ItemSequence="3" UniqueID1="1149" UniqueID2="1766" Description="Scroll Master of Recovery - 1 Day" />
+	<Package GUID="4" ID="9" ItemSequence="4" UniqueID1="1144" UniqueID2="1746" Description="Scroll Master of Defense - 1 Day" />
+	<Package GUID="0" ID="11" ItemSequence="0" UniqueID1="1152" UniqueID2="1778" Description="Scroll of Swiftness Master - 1 Day" />
+	<Package GUID="1" ID="11" ItemSequence="1" UniqueID1="1148" UniqueID2="1762" Description="Scroll Master of Wrath - 1 Day" />
+	<Package GUID="2" ID="11" ItemSequence="2" UniqueID1="1158" UniqueID2="1802" Description="Max AG Boost Aura - 1 Day" />
+	<Package GUID="3" ID="11" ItemSequence="3" UniqueID1="1161" UniqueID2="1814" Description="Scroll Master of Strenghener - 1 Day" />
+	<Package GUID="4" ID="11" ItemSequence="4" UniqueID1="1144" UniqueID2="1746" Description="Scroll Master of Defense - 1 Day" />
+	<Package GUID="5" ID="11" ItemSequence="5" UniqueID1="1149" UniqueID2="1766" Description="Scroll Master of Recovery - 1 Day" />
+	<Package GUID="6" ID="11" ItemSequence="6" UniqueID1="1146" UniqueID2="1754" Description="Scroll Master of Health - 1 Day" />
+	<Package GUID="0" ID="12" ItemSequence="0" UniqueID1="1152" UniqueID2="1778" Description="Scroll of Swiftness Master - 1 Day" />
+	<Package GUID="1" ID="12" ItemSequence="1" UniqueID1="1158" UniqueID2="1802" Description="Max AG Boost Aura - 1 Day" />
+	<Package GUID="2" ID="12" ItemSequence="2" UniqueID1="1161" UniqueID2="1814" Description="Scroll Master of Strenghener - 1 Day" />
+	<Package GUID="3" ID="12" ItemSequence="3" UniqueID1="1144" UniqueID2="1746" Description="Scroll Master of Defense - 1 Day" />
+	<Package GUID="4" ID="12" ItemSequence="4" UniqueID1="1149" UniqueID2="1766" Description="Scroll Master of Recovery - 1 Day" />
+	<Package GUID="5" ID="12" ItemSequence="5" UniqueID1="1146" UniqueID2="1754" Description="Scroll Master of Health - 1 Day" />
+	<Package GUID="6" ID="12" ItemSequence="6" UniqueID1="1145" UniqueID2="1750" Description="Scroll Master of Wizardry - 1 Day" />
+	<Package GUID="0" ID="13" ItemSequence="0" UniqueID1="1146" UniqueID2="1756" Description="Scroll Master of Health - 7 Days" />
+	<Package GUID="1" ID="13" ItemSequence="1" UniqueID1="1161" UniqueID2="1816" Description="Scroll Master of Strenghener - 7 Days" />
+	<Package GUID="2" ID="13" ItemSequence="2" UniqueID1="1152" UniqueID2="1780" Description="Scroll of Swiftness Master - 7 Days" />
+	<Package GUID="3" ID="13" ItemSequence="3" UniqueID1="1149" UniqueID2="1768" Description="Scroll Master of Recovery - 7 Days" />
+	<Package GUID="4" ID="13" ItemSequence="4" UniqueID1="1144" UniqueID2="1748" Description="Scroll Master of Defense - 7 Days" />
+	<Package GUID="5" ID="13" ItemSequence="5" UniqueID1="1148" UniqueID2="1764" Description="Scroll Master of Wrath - 7 Days" />
+	<Package GUID="6" ID="13" ItemSequence="6" UniqueID1="1158" UniqueID2="1804" Description="Max AG Boost Aura - 7 Days" />
+	<Package GUID="0" ID="14" ItemSequence="0" UniqueID1="1146" UniqueID2="1756" Description="Scroll Master of Health - 7 Days" />
+	<Package GUID="1" ID="14" ItemSequence="1" UniqueID1="1161" UniqueID2="1816" Description="Scroll Master of Strenghener - 7 Days" />
+	<Package GUID="2" ID="14" ItemSequence="2" UniqueID1="1152" UniqueID2="1780" Description="Scroll of Swiftness Master - 7 Days" />
+	<Package GUID="3" ID="14" ItemSequence="3" UniqueID1="1149" UniqueID2="1768" Description="Scroll Master of Recovery - 7 Days" />
+	<Package GUID="4" ID="14" ItemSequence="4" UniqueID1="1144" UniqueID2="1748" Description="Scroll Master of Defense - 7 Days" />
+	<Package GUID="5" ID="14" ItemSequence="5" UniqueID1="1158" UniqueID2="1804" Description="Max AG Boost Aura - 7 Days" />
+	<Package GUID="6" ID="14" ItemSequence="6" UniqueID1="1145" UniqueID2="1752" Description="Scroll Master of Wizardry - 7 Days" />
+	<Package GUID="0" ID="15" ItemSequence="0" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
+	<Package GUID="1" ID="15" ItemSequence="1" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
+	<Package GUID="2" ID="15" ItemSequence="2" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
+	<Package GUID="3" ID="15" ItemSequence="3" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
+	<Package GUID="4" ID="15" ItemSequence="4" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
+	<Package GUID="5" ID="15" ItemSequence="5" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
+	<Package GUID="6" ID="15" ItemSequence="6" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
+	<Package GUID="7" ID="15" ItemSequence="7" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
+	<Package GUID="8" ID="15" ItemSequence="8" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
+	<Package GUID="9" ID="15" ItemSequence="9" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
+	<Package GUID="0" ID="17" ItemSequence="0" UniqueID1="950" UniqueID2="1218" Description="Elemental Talisman of Chaos" />
+	<Package GUID="1" ID="17" ItemSequence="1" UniqueID1="950" UniqueID2="1218" Description="Elemental Talisman of Chaos" />
+	<Package GUID="2" ID="17" ItemSequence="2" UniqueID1="950" UniqueID2="1218" Description="Elemental Talisman of Chaos" />
+	<Package GUID="3" ID="17" ItemSequence="3" UniqueID1="950" UniqueID2="1218" Description="Elemental Talisman of Chaos" />
+	<Package GUID="4" ID="17" ItemSequence="4" UniqueID1="950" UniqueID2="1218" Description="Elemental Talisman of Chaos" />
+	<Package GUID="5" ID="17" ItemSequence="5" UniqueID1="950" UniqueID2="1218" Description="Elemental Talisman of Chaos" />
+	<Package GUID="6" ID="17" ItemSequence="6" UniqueID1="950" UniqueID2="1218" Description="Elemental Talisman of Chaos" />
+	<Package GUID="7" ID="17" ItemSequence="7" UniqueID1="950" UniqueID2="1218" Description="Elemental Talisman of Chaos" />
+	<Package GUID="8" ID="17" ItemSequence="8" UniqueID1="950" UniqueID2="1218" Description="Elemental Talisman of Chaos" />
+	<Package GUID="9" ID="17" ItemSequence="9" UniqueID1="950" UniqueID2="1218" Description="Elemental Talisman of Chaos" />
+	<Package GUID="0" ID="18" ItemSequence="0" UniqueID1="22" UniqueID2="37" Description="Talisman of Luck" />
+	<Package GUID="1" ID="18" ItemSequence="1" UniqueID1="22" UniqueID2="37" Description="Talisman of Luck" />
+	<Package GUID="2" ID="18" ItemSequence="2" UniqueID1="22" UniqueID2="37" Description="Talisman of Luck" />
+	<Package GUID="3" ID="18" ItemSequence="3" UniqueID1="22" UniqueID2="37" Description="Talisman of Luck" />
+	<Package GUID="4" ID="18" ItemSequence="4" UniqueID1="22" UniqueID2="37" Description="Talisman of Luck" />
+	<Package GUID="5" ID="18" ItemSequence="5" UniqueID1="22" UniqueID2="37" Description="Talisman of Luck" />
+	<Package GUID="6" ID="18" ItemSequence="6" UniqueID1="22" UniqueID2="37" Description="Talisman of Luck" />
+	<Package GUID="7" ID="18" ItemSequence="7" UniqueID1="22" UniqueID2="37" Description="Talisman of Luck" />
+	<Package GUID="8" ID="18" ItemSequence="8" UniqueID1="22" UniqueID2="37" Description="Talisman of Luck" />
+	<Package GUID="9" ID="18" ItemSequence="9" UniqueID1="22" UniqueID2="37" Description="Talisman of Luck" />
+	<Package GUID="0" ID="20" ItemSequence="0" UniqueID1="944" UniqueID2="1207" Description="Ruud Box (2000)" />
+	<Package GUID="1" ID="20" ItemSequence="1" UniqueID1="944" UniqueID2="1207" Description="Ruud Box (2000)" />
+	<Package GUID="2" ID="20" ItemSequence="2" UniqueID1="944" UniqueID2="1207" Description="Ruud Box (2000)" />
+	<Package GUID="3" ID="20" ItemSequence="3" UniqueID1="944" UniqueID2="1207" Description="Ruud Box (2000)" />
+	<Package GUID="4" ID="20" ItemSequence="4" UniqueID1="944" UniqueID2="1207" Description="Ruud Box (2000)" />
+	<Package GUID="5" ID="20" ItemSequence="5" UniqueID1="944" UniqueID2="1207" Description="Ruud Box (2000)" />
+	<Package GUID="6" ID="20" ItemSequence="6" UniqueID1="944" UniqueID2="1207" Description="Ruud Box (2000)" />
+	<Package GUID="7" ID="20" ItemSequence="7" UniqueID1="944" UniqueID2="1207" Description="Ruud Box (2000)" />
+	<Package GUID="8" ID="20" ItemSequence="8" UniqueID1="944" UniqueID2="1207" Description="Ruud Box (2000)" />
+	<Package GUID="9" ID="20" ItemSequence="9" UniqueID1="944" UniqueID2="1207" Description="Ruud Box (2000)" />
+	<Package GUID="0" ID="24" ItemSequence="0" UniqueID1="945" UniqueID2="1209" Description="Ruud Box (3000)" />
+	<Package GUID="1" ID="24" ItemSequence="1" UniqueID1="945" UniqueID2="1209" Description="Ruud Box (3000)" />
+	<Package GUID="2" ID="24" ItemSequence="2" UniqueID1="945" UniqueID2="1209" Description="Ruud Box (3000)" />
+	<Package GUID="3" ID="24" ItemSequence="3" UniqueID1="945" UniqueID2="1209" Description="Ruud Box (3000)" />
+	<Package GUID="4" ID="24" ItemSequence="4" UniqueID1="945" UniqueID2="1209" Description="Ruud Box (3000)" />
+	<Package GUID="5" ID="24" ItemSequence="5" UniqueID1="945" UniqueID2="1209" Description="Ruud Box (3000)" />
+	<Package GUID="6" ID="24" ItemSequence="6" UniqueID1="945" UniqueID2="1209" Description="Ruud Box (3000)" />
+	<Package GUID="7" ID="24" ItemSequence="7" UniqueID1="945" UniqueID2="1209" Description="Ruud Box (3000)" />
+	<Package GUID="8" ID="24" ItemSequence="8" UniqueID1="945" UniqueID2="1209" Description="Ruud Box (3000)" />
+	<Package GUID="9" ID="24" ItemSequence="9" UniqueID1="945" UniqueID2="1209" Description="Ruud Box (3000)" />
+	<Package GUID="0" ID="25" ItemSequence="0" UniqueID1="943" UniqueID2="1205" Description="Mysterious Stone" />
+	<Package GUID="1" ID="25" ItemSequence="1" UniqueID1="943" UniqueID2="1205" Description="Mysterious Stone" />
+	<Package GUID="2" ID="25" ItemSequence="2" UniqueID1="943" UniqueID2="1205" Description="Mysterious Stone" />
+	<Package GUID="3" ID="25" ItemSequence="3" UniqueID1="943" UniqueID2="1205" Description="Mysterious Stone" />
+	<Package GUID="4" ID="25" ItemSequence="4" UniqueID1="943" UniqueID2="1205" Description="Mysterious Stone" />
+	<Package GUID="5" ID="25" ItemSequence="5" UniqueID1="943" UniqueID2="1205" Description="Mysterious Stone" />
+	<Package GUID="6" ID="25" ItemSequence="6" UniqueID1="943" UniqueID2="1205" Description="Mysterious Stone" />
+	<Package GUID="7" ID="25" ItemSequence="7" UniqueID1="943" UniqueID2="1205" Description="Mysterious Stone" />
+	<Package GUID="8" ID="25" ItemSequence="8" UniqueID1="943" UniqueID2="1205" Description="Mysterious Stone" />
+	<Package GUID="9" ID="25" ItemSequence="9" UniqueID1="943" UniqueID2="1205" Description="Mysterious Stone" />
+</CashItemPackage>

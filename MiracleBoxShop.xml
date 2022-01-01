@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2020 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MiracleBoxShop ###
+//	Enable: Allows to disable or enable the system, 0/1
+//
+// ### MiracleBoxShop::RewardSettings::Section ###
+//	ID: Section identification numer, starts from 0, max 25 sections
+//	SkillRate: Skill chance rate for the section, n/1000000
+//	LuckRate: Luck chance rate for the section, n/1000000
+//	OptionRate: Option chance rate for the section, n/1000000
+//	ExcRate: Excellent option chance rate for the section, n/1000000
+//
+// ### MiracleBoxShop::RewardSettings::ItemRewardList::Section ###
+//	ID: Section identification number, refers to sections ID set in RewardSettings::Section part of the file
+//	Active: Allows to enable or disable section, 0/1
+//	Name: Name of section, may be used for logging purpose
+//
+// ### MiracleBoxShop::RewardSettings::ItemRewardList::Section::Input::Item ###
+//	ItemCat: Category of item required to apply for the draw, see ItemList.xml
+//	ItemIndex: Index of item required to apply for the draw, see ItemList.xml
+//	Cost: Cost of the draw, expressen in Zen or number of required items
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// List of input items accept must 3 entries. If Zen requirement is a price for a section then it should
+// be the only requirement. Zen and items requirements cannot be mixed together.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### MiracleBoxShop::RewardSettings::ItemRewardList::Section::Reward::Item ###
+//	Cat: Reward item category, see ItemList.xml
+//	Index: Reward item index, see ItemList.xml
+//	Durability: Defines item durability, 0-255, optional
+//	MinLevel: Minimum level of reward item, 0-15
+//	MaxLevel: Maximum level of reward item, 0-15
+//	Skill: If set then reward item may come with skill on basis of SkillRate value, 0/1
+//	Luck: If set then reward item may come with luck on basis of LuckRate value, 0/1
+//	Option: If set then reward item may come with option (random up to 16 or 28 depending on server settings) on basis of SkillRate value, 0/1
+//	Exc:
+//		~ -1: no exc option
+//		~ -2: random count of random options, based on rates from ExcellentOptions.xml
+//		~ -3; X: Specified count of random options, the 'X' defines count of excellent options, max 9, options selection based on rates from ExcellentOptions.xml
+//		~ X;X;X;X;X;X;X;X;X: Defined excellent options, the 'X' is excellent option ID based on ExcellentOptions.xml, maximum 9 options can be defined
+//	SetItem: Determines whether reward item should be a set item (random, basing on base item type), 0/1
+//	SocketCount:
+//		~ 0: no socket
+//		~ 1: up to one slot
+//		~ 2: up to two slots
+//		~ 3: up to three slots
+//		~ 4: up to four slots
+//		~ 5: up to five slots
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Socket count for pentagrams is drawn on SocketProbabilityRate basis from PentagramOption.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	ElementalItem:
+//		~ 0: no elemental
+//		~ 1: Fire
+//		~ 2: Water
+//		~ 3: Earth
+//		~ 4: Wind
+//		~ 5: Darkness
+//		~ -1: random attribute
+//
+//	Rate: Chance rate of getting specified item from section, max rate is sum of all rates per section
+//
+// ### MiracleBoxShop::RewardSettings::RewardNotificationItems::Item ###
+//	Cat: Rewarded item category, should be an item that exist in reward list
+//	Index: Rewarded item index, should be an item that exist in reward list
+/	Name: Name of rewarded item, used to display in game
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MiracleBoxShop Enable="1">
+	<RewardSettings>
+		<Section ID="0" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="1" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="2" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="3" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="4" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="5" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="6" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="7" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+	</RewardSettings>
+	<ItemRewardList>						
+		<Section ID="0" Active="1" Name="Bless Jewelry Box">
+			<Input>
+				<Item ItemCat="14" ItemIndex="13" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Elemental Rune -->
+				
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Vacancies -->
+				
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- GES -->
+				
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- eGES -->
+				
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- elitePiece -->
+				
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="1"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="3"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="5"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="10"/> <!-- gs -->
+				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- garuda feather -->
+				
+				<Item Cat="14" Index="345" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="1"/> <!-- MS -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- toca -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="189" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="190" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- etoca -->
+				<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- sculpture -->
+				<Item Cat="20" Index="502" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- darklife -->
+				<Item Cat="20" Index="501" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- jewelofluck -->
+			</Reward>
+		</Section>				
+		
+		<Section ID="1" Active="1" Name="Soul Jewelry Box">
+			<Input>
+				<Item ItemCat="14" ItemIndex="14" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Elemental Rune -->
+				
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Vacancies -->
+				
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- GES -->
+				
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- eGES -->
+				
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- elitePiece -->
+				
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="1"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="3"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="5"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="10"/> <!-- gs -->
+				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- garuda feather -->
+				
+				<Item Cat="14" Index="345" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="1"/> <!-- MS -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- toca -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="189" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="190" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- etoca -->
+				<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- sculpture -->
+				<Item Cat="20" Index="502" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- darklife -->
+				<Item Cat="20" Index="501" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- jewelofluck -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="2" Active="1" Name="Life Jewelry Box">
+			<Input>
+				<Item ItemCat="14" ItemIndex="16" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Elemental Rune -->
+				
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Vacancies -->
+				
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- GES -->
+				
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- eGES -->
+				
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- elitePiece -->
+				
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="1"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="3"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="5"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="10"/> <!-- gs -->
+				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- garuda feather -->
+				
+				<Item Cat="14" Index="345" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="1"/> <!-- MS -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- toca -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="189" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="190" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- etoca -->
+				<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- sculpture -->
+				<Item Cat="20" Index="502" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- darklife -->
+				<Item Cat="20" Index="501" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- jewelofluck -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="3" Active="1" Name="Creation Jewelry Box">
+			<Input>
+				<Item ItemCat="14" ItemIndex="22" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Elemental Rune -->
+				
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Vacancies -->
+				
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- GES -->
+				
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- eGES -->
+				
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- elitePiece -->
+				
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="1"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="3"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="5"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="10"/> <!-- gs -->
+				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- garuda feather -->
+				
+				<Item Cat="14" Index="345" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="1"/> <!-- MS -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- toca -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="189" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="190" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- etoca -->
+				<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- sculpture -->
+				<Item Cat="20" Index="502" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- darklife -->
+				<Item Cat="20" Index="504" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- jewelofluck 504-->
+			</Reward>
+		</Section>	
+		
+		<Section ID="4" Active="1" Name="Guardian Jewelry Box">
+			<Input>
+				<Item ItemCat="14" ItemIndex="31" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Elemental Rune -->
+				
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Vacancies -->
+				
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- GES -->
+				
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- eGES -->
+				
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- elitePiece -->
+				
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="1"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="3"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="5"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="10"/> <!-- gs -->
+				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- garuda feather -->
+				
+				<Item Cat="14" Index="345" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="1"/> <!-- MS -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- toca -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="189" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="190" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- etoca -->
+				<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- sculpture -->
+				<Item Cat="20" Index="502" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- darklife -->
+				<Item Cat="20" Index="501" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- jewelofluck -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="5" Active="1" Name="Harmony Jewelry Box">
+			<Input>
+				<Item ItemCat="14" ItemIndex="42" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Elemental Rune -->
+				
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Vacancies -->
+				
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- GES -->
+				
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- eGES -->
+				
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- elitePiece -->
+				
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="1"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="3"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="5"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="10"/> <!-- gs -->
+				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- garuda feather -->
+				
+				<Item Cat="14" Index="345" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="1"/> <!-- MS -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- toca -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="189" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="190" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- etoca -->
+				<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- sculpture -->
+				<Item Cat="20" Index="502" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- darklife -->
+				<Item Cat="20" Index="501" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- jewelofluck -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="6" Active="1" Name="Chaos Jewelry Box">
+			<Input>
+				<Item ItemCat="12" ItemIndex="15" Cost="50" />
+			</Input>
+			<Reward>
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Elemental Rune -->
+				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Elemental Rune -->
+				
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- Vacancies -->
+				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- Vacancies -->
+				
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- GES -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- GES -->
+				
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- eGES -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- eGES -->
+				
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="6" Durability="5"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="10"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="15"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="20"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="25"/> <!-- elitePiece -->
+				<Item Cat="14" Index="469" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="30"/> <!-- elitePiece -->
+				
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="4" Durability="1"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3" Durability="3"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2" Durability="5"/> <!-- gs -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="10"/> <!-- gs -->
+				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- garuda feather -->
+				
+				<Item Cat="14" Index="345" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5" Durability="1"/> <!-- MS -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- toca -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="189" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- tol -->
+				<Item Cat="14" Index="190" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- etoca -->
+				<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- sculpture -->
+				<Item Cat="20" Index="502" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- darklife -->
+				<Item Cat="20" Index="501" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- jewelofluck -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="7" Active="1" Name="Miracle Coin Box">
+			<Input>
+				<Item ItemCat="14" ItemIndex="413" Cost="1" />
+			</Input>
+			<Reward>
+				<Item Cat="14" Index="447" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="10" Durability="1"/> <!-- ruud 2k -->
+				<Item Cat="14" Index="448" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="10" Durability="1"/> <!-- ruud 3k -->
+				
+				<Item Cat="19" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="-2" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="3" Durability="1"/> <!-- premium box -->
+				<Item Cat="19" Index="3" MinLevel="1" MaxLevel="1" Skill="1" Luck="0" Option="-1" Exc="-2" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="10" Durability="1"/> <!-- premium box -->
+				<Item Cat="12" Index="306" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="-2" SetItem="1" SocketCount="-2" ElementalItem="-1" Rate="2" Durability="5"/> <!-- runedil-->
+				<Item Cat="12" Index="307" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="-2" SetItem="1" SocketCount="-2" ElementalItem="-1" Rate="2" Durability="5"/> <!-- lemuria-->
+				<Item Cat="12" Index="308" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="-2" SetItem="1" SocketCount="-2" ElementalItem="-1" Rate="2" Durability="5"/> <!-- lyra-->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- toca -->
+				<Item Cat="14" Index="190" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- etoca -->
+				<Item Cat="14" Index="477" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- seal of ghost horse -->
+				<Item Cat="14" Index="498" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- seal of ice dragon -->
+				<Item Cat="12" Index="450" MinLevel="11" MaxLevel="13" Skill="0" Luck="0" Option="0" Exc="-3;3" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3"/> <!-- Ancestral -->
+				<Item Cat="12" Index="458" MinLevel="11" MaxLevel="13" Skill="0" Luck="0" Option="0" Exc="-3;3" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3"/> <!-- Ancestral -->
+				<Item Cat="12" Index="335" MinLevel="0" MaxLevel="5" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- fire ss10 -->
+				<Item Cat="12" Index="336" MinLevel="0" MaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- water ss10 -->
+				<Item Cat="12" Index="337" MinLevel="0" MaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- ice ss10 -->
+				<Item Cat="12" Index="338" MinLevel="0" MaxLevel="5" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- wind ss10 -->
+				<Item Cat="12" Index="339" MinLevel="0" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- lightining ss10 -->
+				<Item Cat="12" Index="340" MinLevel="0" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- earth  ss10-->
+				<Item Cat="14" Index="497" MinLevel="0" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- Glory of Honor -->
+				<Item Cat="0" Index="62" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul sword -->
+				<Item Cat="0" Index="63" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul magic sword-->
+				<Item Cat="0" Index="64" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul  claw-->
+				<Item Cat="0" Index="74" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul short sword-->
+				<Item Cat="0" Index="92" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul 2 sword-->
+				<Item Cat="2" Index="36" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul scepter-->
+				<Item Cat="2" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul runemace-->
+				<Item Cat="3" Index="28" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul lance-->
+				<Item Cat="3" Index="28" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul lance-->
+				<Item Cat="4" Index="38" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul bow-->
+				<Item Cat="4" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul quiver-->
+				<Item Cat="4" Index="51" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul gun-->
+				<Item Cat="5" Index="55" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul staff-->
+				<Item Cat="5" Index="56" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul stick-->
+				<Item Cat="5" Index="60" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul book-->
+				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- garuda feather -->
+			</Reward>
+		</Section>	
+		
+	</ItemRewardList>
+	<RewardNotificationItems>							
+		<Item Cat="20" Index="501" Name="JEWELOFLUCK" />
+		<Item Cat="14" Index="96" Name="TOCA" />
+		<Item Cat="14" Index="190" Name="ETOCA" />
+		<Item Cat="14" Index="466" Name="SCULPTURE" />
+		<Item Cat="13" Index="468" Name="GS" />
+		<Item Cat="13" Index="467" Name="GARUDAFEATHER" />
+
+	</RewardNotificationItems>
+</MiracleBoxShop>	

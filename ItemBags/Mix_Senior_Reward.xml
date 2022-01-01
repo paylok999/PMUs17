@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~ For detailed explanation of the bags system refer to ### Item Bags System Description ###.txt included in \Data\ItemBags\
+-->
+
+<ItemBag>
+<BagConfig Name="Mix_Senior_Reward" ItemRate="10000" SetItemRate="0" MoneyDrop="0" IsPentagramForBeginnersDrop="0" BagUseEffect="-1" BagUseRate="10000" />
+<SummonBook Enable="0" DropRate="0" ItemCat="0" ItemIndex="0" />
+<AddCoin Enable="0" CoinType="0" CoinValue="0" />
+<Ruud GainRate="0" MinValue="1" MaxValue="10" />
+
+<DropAllow DW="1" DK="1" ELF="1" MG="1" DL="1" SU="1" RF="1" GL="1" RW="1" SLA="1" GC="1" LW="1" LM="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+	<Drop Rate="500" Count="1">
+		<Item Cat="7" Index="29" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- DK -->
+		<Item Cat="8" Index="29" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- DK -->
+		<Item Cat="9" Index="29" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- DK -->
+		<Item Cat="10" Index="29" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- DK -->
+		<Item Cat="11" Index="29" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- DK -->
+		
+		<Item Cat="7" Index="30" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- vm -->
+		<Item Cat="8" Index="30" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- vm -->
+		<Item Cat="9" Index="30" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- vm -->
+		<Item Cat="10" Index="30" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- vm -->
+		<Item Cat="11" Index="30" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- vm -->
+		
+		<Item Cat="7" Index="31" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- sylp -->
+		<Item Cat="8" Index="31" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- sylp -->
+		<Item Cat="9" Index="31" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- sylp -->
+		<Item Cat="10" Index="31" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- sylp -->
+		<Item Cat="11" Index="31" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- sylp -->
+		
+		<Item Cat="8" Index="32" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- volcano -->
+		<Item Cat="9" Index="32" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- volcano -->
+		<Item Cat="10" Index="32" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- volcano -->
+		<Item Cat="11" Index="32" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- volcano -->
+		
+		<Item Cat="7" Index="33" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- sunlight -->
+		<Item Cat="8" Index="33" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- sunlight -->
+		<Item Cat="9" Index="33" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- sunlight -->
+		<Item Cat="10" Index="33" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- sunlight -->
+		<Item Cat="11" Index="33" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- sunlight -->
+		
+		<Item Cat="7" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- storm blitz -->
+		<Item Cat="8" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- storm blitz -->
+		<Item Cat="9" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- storm blitz -->
+		<Item Cat="10" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- storm blitz -->
+		<Item Cat="11" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- storm blitz -->
+		
+		<Item Cat="7" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- phoenix -->
+		<Item Cat="8" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- phoenix  -->
+		<Item Cat="9" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- phoenix  -->
+		<Item Cat="11" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- phoenix  -->
+		
+		<Item Cat="14" Index="399" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- hero BA spirit  -->
+		
+		<Item Cat="12" Index="36" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- stormwing -->
+		<Item Cat="12" Index="37" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- eternal -->
+		<Item Cat="12" Index="38" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- illusion -->
+		<Item Cat="12" Index="39" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- ruin -->
+		<Item Cat="12" Index="40" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- emperor -->
+		<Item Cat="12" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- dimensin -->
+		<Item Cat="12" Index="50" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- overrule -->
+		<Item Cat="12" Index="270" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- trancendence -->
+		<Item Cat="12" Index="467" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- Disillusion -->
+		<Item Cat="12" Index="472" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" /><!-- silence -->
+		
+		<Item Cat="7" Index="98" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BADK -->
+		<Item Cat="8" Index="98" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BADK -->
+		<Item Cat="9" Index="98" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BADK -->
+		<Item Cat="11" Index="98" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BADK -->
+		
+		<Item Cat="7" Index="99" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA wiz -->
+		<Item Cat="8" Index="99" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA wiz -->
+		<Item Cat="9" Index="99" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA wiz -->
+		<Item Cat="10" Index="99" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA wiz -->
+		
+		<Item Cat="7" Index="100" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA elf -->
+		<Item Cat="8" Index="100" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA elf -->
+		<Item Cat="9" Index="100" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA elf -->
+		<Item Cat="10" Index="100" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA elf -->
+		
+		<Item Cat="7" Index="101" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA sum -->
+		<Item Cat="8" Index="101" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA sum -->
+		<Item Cat="9" Index="101" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA sum -->
+		<Item Cat="10" Index="101" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA sum -->
+		
+		<Item Cat="8" Index="102" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA mg -->
+		<Item Cat="9" Index="102" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA mg -->
+		<Item Cat="10" Index="102" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA mg -->
+		<Item Cat="11" Index="102" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA mg -->
+		
+		<Item Cat="7" Index="103" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA DL -->
+		<Item Cat="8" Index="103" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA DL -->
+		<Item Cat="9" Index="103" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA DL -->
+		<Item Cat="10" Index="103" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA DL -->
+		
+		<Item Cat="7" Index="104" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA RF -->
+		<Item Cat="8" Index="104" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA RF -->
+		<Item Cat="9" Index="104" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA RF -->
+		<Item Cat="11" Index="104" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA RF -->
+		
+		<Item Cat="7" Index="105" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA lancer -->
+		<Item Cat="8" Index="105" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA lancer -->
+		<Item Cat="9" Index="105" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA lancer -->
+		<Item Cat="10" Index="105" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA lancer -->
+		
+		<Item Cat="7" Index="122" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA rune -->
+		<Item Cat="8" Index="122" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA rune -->
+		<Item Cat="9" Index="122" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA rune -->
+		<Item Cat="10" Index="122" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA rune -->
+		
+		<Item Cat="7" Index="158" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA elf b -->
+		<Item Cat="8" Index="158" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA elf b-->
+		<Item Cat="9" Index="158" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA elf b-->
+		<Item Cat="10" Index="158" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA elf b-->
+		
+		<Item Cat="8" Index="161" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA mg b-->
+		<Item Cat="9" Index="161" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA mg b-->
+		<Item Cat="10" Index="161" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA mg b-->
+		<Item Cat="11" Index="161" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA mg b-->
+		
+		<Item Cat="7" Index="180" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA slay  -->
+		<Item Cat="8" Index="180" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA slay -->
+		<Item Cat="9" Index="180" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA slay -->
+		<Item Cat="10" Index="180" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="-1" Option="0" Exc="-1" SetItem="1" SocketCount="0" ElementalItem="0" /><!-- BA slay -->
+
+	</Drop>
+</DropAllow>
+</ItemBag>
