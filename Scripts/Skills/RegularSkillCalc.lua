@@ -210,6 +210,10 @@ function ElfHeal(TargetClass, Index, TargetIndex, Energy)
 			SkillEffect = Energy / 5 + 5
 		elseif (TargetClass == CLASS_GUNCRUSHER) then
 			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_LIGHTWIZARD) then
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_LEMURIAMAGE) then
+			SkillEffect = Energy / 5 + 5
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 5 + 5
@@ -246,6 +250,10 @@ function ElfAttack(Class, Index, TargetIndex, Energy)
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_GUNCRUSHER) then
 			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_LIGHTWIZARD) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_LEMURIAMAGE) then
+			SkillEffect = 3 + Energy / 7
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 7
@@ -281,6 +289,10 @@ function ElfDefense(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_SLAYER) then
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_LIGHTWIZARD) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
