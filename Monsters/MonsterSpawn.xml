@@ -10253,7 +10253,6 @@
 			<Spawn Index="878" Distance="4" StartX="93" StartY="118" Dir="2" Element="2" />
 			<Spawn Index="878" Distance="4" StartX="88" StartY="120" Dir="2" Element="2" />
 			<Spawn Index="878" Distance="4" StartX="62" StartY="121" Dir="2" Element="2" />
-			<Spawn Index="878" Distance="4" StartX="50" StartY="70" Dir="2" Element="1" />
 			<Spawn Index="878" Distance="4" StartX="43" StartY="58" Dir="2" Element="1" />
 			<Spawn Index="878" Distance="4" StartX="29" StartY="63" Dir="2" Element="1" />
 			<Spawn Index="878" Distance="4" StartX="202" StartY="157" Dir="2" Element="3" />
@@ -10330,7 +10329,6 @@
 			<Spawn Index="877" Distance="4" StartX="127" StartY="136" EndX="130" EndY="141" Dir="2" Count="1" Element="4" />
 			<Spawn Index="877" Distance="4" StartX="138" StartY="131" EndX="142" EndY="132" Dir="2" Count="2" Element="4" />
 			<Spawn Index="877" Distance="4" StartX="85" StartY="115" EndX="87" EndY="116" Dir="2" Count="2" Element="2" />
-			<Spawn Index="877" Distance="4" StartX="49" StartY="67" EndX="53" EndY="68" Dir="2" Count="2" Element="1" />
 			<Spawn Index="877" Distance="4" StartX="36" StartY="58" EndX="38" EndY="61" Dir="2" Count="2" Element="1" />
 			<Spawn Index="877" Distance="4" StartX="73" StartY="106" EndX="73" EndY="106" Dir="2" Count="2" Element="3" />
 			<Spawn Index="878" Distance="4" StartX="225" StartY="100" EndX="230" EndY="105" Dir="2" Count="1" Element="5" /> <!--(878) Ashy Witch Queen [Lv.560]-->
@@ -10343,6 +10341,20 @@
 			<Spawn Index="878" Distance="4" StartX="35" StartY="79" EndX="36" EndY="83" Dir="2" Count="2" Element="1" />
 			<Spawn Index="878" Distance="4" StartX="95" StartY="160" EndX="95" EndY="160" Dir="2" Count="1" Element="4" />
 			<Spawn Index="878" Distance="4" StartX="44" StartY="108" EndX="44" EndY="108" Dir="2" Count="2" Element="2" />
+			<Spawn Index="877" Distance="4" StartX="49" StartY="67" EndX="53" EndY="68" Dir="2" Count="8" Element="1" /> <!--spot-->
+			<Spawn Index="877" Distance="4" StartX="66" StartY="56" EndX="68" EndY="60" Dir="2" Count="5" Element="1" />
+			<Spawn Index="875" Distance="4" StartX="107" StartY="89" EndX="111" EndY="92" Dir="2" Count="5" Element="2" />
+			<Spawn Index="877" Distance="4" StartX="69" StartY="87" EndX="73" EndY="91" Dir="2" Count="4" Element="2" />
+			<Spawn Index="878" Distance="4" StartX="88" StartY="116" EndX="92" EndY="120" Dir="2" Count="4" Element="2" />
+			<Spawn Index="876" Distance="4" StartX="147" StartY="104" EndX="151" EndY="107" Dir="2" Count="4" Element="4" />
+			<Spawn Index="878" Distance="4" StartX="144" StartY="132" EndX="147" EndY="135" Dir="2" Count="4" Element="4" />
+			<Spawn Index="875" Distance="4" StartX="169" StartY="53" EndX="171" EndY="56" Dir="2" Count="5" Element="3" />
+			<Spawn Index="876" Distance="4" StartX="187" StartY="82" EndX="190" EndY="86" Dir="2" Count="5" Element="3" />
+			<Spawn Index="876" Distance="4" StartX="165" StartY="107" EndX="169" EndY="110" Dir="2" Count="5" Element="3" />
+			<Spawn Index="877" Distance="4" StartX="196" StartY="130" EndX="200" EndY="133" Dir="2" Count="4" Element="3" />
+			<Spawn Index="875" Distance="4" StartX="212" StartY="24" EndX="216" EndY="28" Dir="2" Count="4" Element="5" />
+			<Spawn Index="876" Distance="4" StartX="191" StartY="50" EndX="195" EndY="54" Dir="2" Count="3" Element="5" />
+			<Spawn Index="878" Distance="4" StartX="238" StartY="50" EndX="242" EndY="53" Dir="2" Count="3" Element="5" />
 		</Spot>
 	</Map>
 	<Map Number="135" Name="Kethotum Old">
@@ -11240,5 +11252,20 @@
 			<!--(900) (Elite) Crimson Harpy [Lv.590]-->
 			<Spawn Index="900" Distance="30" StartX="45" StartY="109" Dir="-1" Element="2" />
 		</Spot>
+		<Spot Type="3" Description="Multi-Spawn Elemental Monsters">
+			<Spawn Index="896" Distance="4" StartX="161" StartY="13" EndX="165" EndY="18" Dir="2" Count="6" Element="3" />
+			<Spawn Index="897" Distance="4" StartX="215" StartY="37" EndX="220" EndY="40" Dir="2" Count="6" Element="3" />
+			<Spawn Index="896" Distance="4" StartX="188" StartY="14" EndX="192" EndY="17" Dir="2" Count="6" Element="3" />
+			<Spawn Index="896" Distance="4" StartX="63" StartY="60" EndX="68" EndY="64" Dir="2" Count="7" Element="4" />
+			<Spawn Index="895" Distance="4" StartX="95" StartY="7" EndX="100" EndY="11" Dir="2" Count="5" Element="4" />
+			<Spawn Index="895" Distance="4" StartX="95" StartY="7" EndX="100" EndY="11" Dir="2" Count="4" Element="6" />
+			<Spawn Index="897" Distance="4" StartX="81" StartY="127" EndX="85" EndY="131" Dir="2" Count="7" Element="2" />
+			<Spawn Index="897" Distance="4" StartX="32" StartY="164" EndX="36" EndY="168" Dir="2" Count="7" Element="2" />
+			<Spawn Index="897" Distance="4" StartX="44" StartY="107" EndX="48" EndY="112" Dir="2" Count="6" Element="2" />
+			<Spawn Index="896" Distance="4" StartX="124" StartY="165" EndX="128" EndY="171" Dir="2" Count="8" Element="5" />
+			<Spawn Index="895" Distance="4" StartX="119" StartY="208" EndX="123" EndY="212" Dir="2" Count="8" Element="5" />
+			<Spawn Index="897" Distance="4" StartX="146" StartY="180" EndX="151" EndY="184" Dir="2" Count="8" Element="1" />
+			<Spawn Index="896" Distance="4" StartX="162" StartY="124" EndX="165" EndY="127" Dir="2" Count="8" Element="1" />
+			<Spawn Index="897" Distance="4" StartX="113" StartY="123" EndX="117" EndY="131" Dir="2" Count="8" Element="6" />
 	</Map>
 </MonsterSpawn>
