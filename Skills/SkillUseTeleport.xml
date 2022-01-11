@@ -25,19 +25,19 @@
 	<Skill Index="5" Name="Flame" Enable="1" />
 	<Skill Index="6" Name="Teleport" Enable="1" />
 	<Skill Index="7" Name="Ice" Enable="1" />
-	<Skill Index="8" Name="Twister" Enable="0" />
-	<Skill Index="9" Name="Evil Spirit" Enable="0" />
-	<Skill Index="10" Name="Hellfire" Enable="0" />
+	<Skill Index="8" Name="Twister" Enable="1" />
+	<Skill Index="9" Name="Evil Spirit" Enable="1" />
+	<Skill Index="10" Name="Hellfire" Enable="1" />
 	<Skill Index="11" Name="Power Wave" Enable="1" />
 	<Skill Index="12" Name="Aqua Beam" Enable="1" />
-	<Skill Index="13" Name="Cometfall" Enable="0" />
-	<Skill Index="14" Name="Inferno" Enable="0" />
-	<Skill Index="15" Name="Teleport Ally" Enable="0" />
+	<Skill Index="13" Name="Cometfall" Enable="1" />
+	<Skill Index="14" Name="Inferno" Enable="1" />
+	<Skill Index="15" Name="Teleport Ally" Enable="1" />
 	<Skill Index="16" Name="Soul Barrier" Enable="1" />
 	<Skill Index="17" Name="Energy Ball" Enable="1" />
 	<Skill Index="38" Name="Decay" Enable="1" />
 	<Skill Index="39" Name="Ice Storm" Enable="1" />
-	<Skill Index="40" Name="Nova" Enable="0" />
+	<Skill Index="40" Name="Nova" Enable="1" />
 	<Skill Index="240" Name="Magical Shot" Enable="1" />
 	<Skill Index="241" Name="Shining Bird" Enable="0" />
 	<Skill Index="242" Name="Dragon Violent" Enable="0" />
@@ -50,7 +50,7 @@
 	<Skill Index="381" Name="Inferno Strengthener" Enable="0" />
 	<Skill Index="382" Name="Blast Strengthener" Enable="1" />
 	<Skill Index="384" Name="Poison Strengthener" Enable="1" />
-	<Skill Index="385" Name="Evil Spirit Strengthener" Enable="0" />
+	<Skill Index="385" Name="Evil Spirit Strengthener" Enable="1" />
 	<Skill Index="387" Name="Decay Strengthener" Enable="1" />
 	<Skill Index="388" Name="Hellfire Strengthener" Enable="0" />
 	<Skill Index="389" Name="Ice Strengthener" Enable="1" />
@@ -67,8 +67,8 @@
 	<Skill Index="497" Name="Earth Prison Strengthener" Enable="1" />
 	<Skill Index="642" Name="Illusion" Enable="1" />
 	<Skill Index="724" Name="Meteor Strike" Enable="1" />
-	<Skill Index="725" Name="Meteor Storm" Enable="0" />
-	<Skill Index="726" Name="Soul Seeker" Enable="0" />
+	<Skill Index="725" Name="Meteor Storm" Enable="1" />
+	<Skill Index="726" Name="Soul Seeker" Enable="1" />
 	<Skill Index="843" Name="Shining Bird Strengthener" Enable="0" />
 	<Skill Index="844" Name="Shining Bird Mastery" Enable="0" />
 	<Skill Index="846" Name="Dragon Violent Strengthener" Enable="0" />
@@ -78,7 +78,7 @@
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<Skill Index="1075" Name="Meteor Strike Enhancement Skill" Enable="1" />
 	<Skill Index="1076" Name="Meteor Storm Enhancement Skill" Enable="0" />
-	<Skill Index="1078" Name="Evil Spirit Enhancement Skill" Enable="0" />
+	<Skill Index="1078" Name="Evil Spirit Enhancement Skill" Enable="1" />
 	<Skill Index="1220" Name="Shining Bird Enhancement Skill" Enable="0" />
 	<Skill Index="1221" Name="Dragon Violent Enhancement Skill" Enable="0" />
 	<Skill Index="1216" Name="Spear Storm Enhancement Skill" Enable="1" />

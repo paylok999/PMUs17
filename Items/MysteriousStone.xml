@@ -40,13 +40,13 @@
 
 <MysteriousStone>
 	<Armors> <!-- Maximum 30 entries -->
-		<Option	Set="1" Luck="0"  Rate="850000" />
-		<Option	Set="2" Luck="0"  Rate="70000" />
-		<Option	Set="1" Luck="1"  Rate="60000" />	
-		<Option	Set="2" Luck="1"  Rate="20000" />
+		<Option	Set="1" Luck="0"  Rate="400000" />
+		<Option	Set="2" Luck="0"  Rate="300000" />
+		<Option	Set="1" Luck="1"  Rate="300000" />	
+		<Option	Set="2" Luck="1"  Rate="100000" />
 	</Armors>
 
-	<Weapons MaxExcOption="3"> <!-- Maximum 30 entries -->
+	<Weapons MaxExcOption="4"> <!-- Maximum 30 entries -->
 		<Option Exc1="0" Exc2="3" Exc3="7"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="100000" />
 		<Option Exc1="0" Exc2="4" Exc3="6"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="150000" />
 		<Option Exc1="0" Exc2="5" Exc3="5"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="100000" />
