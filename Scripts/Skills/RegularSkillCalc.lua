@@ -435,7 +435,7 @@ function ChaoticDiseierCalc(InDamage, Energy)
 end
 
 -- SkillID: 737, Wind Soul - (Lord Emperor)
-function LordWindSoulCalcDamage(InDamage, Energy)
+function LordWindSoulCalcDamage(InDamage, Strength, Dexterity, Vitality, Energy, Command)
 	local OutDamage = InDamage * (Energy / 25 + 200) / 100
 	
 	return OutDamage
@@ -1255,9 +1255,9 @@ function LemuriaMageDefense(Class, Index, TargetIndex, Energy)
 			SkillEffect = 2 + Energy / 16
 		elseif (Class == CLASS_SLAYER) then
 			SkillEffect = 2 + Energy / 16
-		elseif (Class == CLASS_LIGHTWIZARD) then
+		elseif (Class == CLASS_GUNCRUSHER) then
 			SkillEffect = 2 + Energy / 16
-		elseif (Class == CLASS_SLAYER) then
+		elseif (Class == CLASS_LIGHTWIZARD) then
 			SkillEffect = 2 + Energy / 16
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = 2 + Energy / 16
