@@ -87,6 +87,16 @@
 		<Section ID="5" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
 		<Section ID="6" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
 		<Section ID="7" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+		<Section ID="8" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+		<Section ID="9" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+		<Section ID="10" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+		<Section ID="11" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+		<Section ID="12" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+		<Section ID="13" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+		<Section ID="14" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+		<Section ID="15" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+		<Section ID="16" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
+		<Section ID="17" SkillRate="1000000" LuckRate="1000000" OptionRate="1000000" ExcRate="1000000" /> <!-- n/1000000 -->
 	</RewardSettings>
 	<ItemRewardList>						
 		<Section ID="0" Active="1" Name="Bless Jewelry Box">
@@ -530,6 +540,110 @@
 				<Item Cat="5" Index="56" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul stick-->
 				<Item Cat="5" Index="60" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul book-->
 				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- garuda feather -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="8" Active="1" Name="Rare Ticket 1">
+			<Input>
+				<Item ItemCat="14" ItemIndex="58" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="14" Index="401" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="1"/> <!-- ruud 50 -->
+				<Item Cat="14" Index="402" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="1"/> <!-- ruud 100 -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="9" Active="1" Name="Rare Ticket 2">
+			<Input>
+				<Item ItemCat="14" ItemIndex="59" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="14" Index="41" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- ruud 50 -->
+				<Item Cat="14" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- ruud 100 -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="10" Active="1" Name="Rare Ticket 3">
+			<Input>
+				<Item ItemCat="14" ItemIndex="60" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="12" Index="112" MinLevel="0" MaxLevel="5" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS3FIRE -->
+				<Item Cat="12" Index="113" MinLevel="0" MaxLevel="4" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS3WATER -->
+				<Item Cat="12" Index="114" MinLevel="0" MaxLevel="4" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS3ICE -->
+				<Item Cat="12" Index="115" MinLevel="0" MaxLevel="5" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS3WIND -->
+				<Item Cat="12" Index="116" MinLevel="0" MaxLevel="3" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS3LIGHTNING -->
+				<Item Cat="12" Index="117" MinLevel="0" MaxLevel="3" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS3EARTH -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="11" Active="1" Name="Rare Ticket 4">
+			<Input>
+				<Item ItemCat="14" ItemIndex="61" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="12" Index="118" MinLevel="0" MaxLevel="5" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS4FIRE -->
+				<Item Cat="12" Index="119" MinLevel="0" MaxLevel="4" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS4WATER -->
+				<Item Cat="12" Index="120" MinLevel="0" MaxLevel="4" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS4ICE -->
+				<Item Cat="12" Index="121" MinLevel="0" MaxLevel="5" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS4WIND -->
+				<Item Cat="12" Index="122" MinLevel="0" MaxLevel="3" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS4LIGHTNING -->
+				<Item Cat="12" Index="123" MinLevel="0" MaxLevel="3" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- SS4EARTH -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="12" Active="1" Name="Rare Ticket 5">
+			<Input>
+				<Item ItemCat="14" ItemIndex="62" Cost="10" />
+			</Input>
+			<Reward>
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="5" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- ges -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="4" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- ges -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="13" Active="1" Name="Rare Ticket 6">
+			<Input>
+				<Item ItemCat="14" ItemIndex="83" Cost="25" />
+			</Input>
+			<Reward>
+				<Item Cat="14" Index="415" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="1"/> <!-- AWAKENING -->
+				<Item Cat="14" Index="449" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="1"/> <!-- COLDMARRIAGE -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="14" Active="1" Name="Rare Ticket 8">
+			<Input>
+				<Item ItemCat="14" ItemIndex="146" Cost="25" />
+			</Input>
+			<Reward>
+				<Item Cat="14" Index="494" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="1"/> <!-- ANCESTRAL FLEET -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="15" Active="1" Name="Rare Ticket 9">
+			<Input>
+				<Item ItemCat="14" ItemIndex="147" Cost="50" />
+			</Input>
+			<Reward>
+				<Item Cat="14" Index="450" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="1"/> <!-- SOULMORU -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="16" Active="1" Name="Rare Ticket 10">
+			<Input>
+				<Item ItemCat="14" ItemIndex="148" Cost="50" />
+			</Input>
+			<Reward>
+				<Item Cat="14" Index="495" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="1"/> <!-- SOULMORU -->
+			</Reward>
+		</Section>	
+		
+		<Section ID="17" Active="1" Name="Rare Ticket 11">
+			<Input>
+				<Item ItemCat="14" ItemIndex="149" Cost="50" />
+			</Input>
+			<Reward>
+				<Item Cat="14" Index="502" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="1"/> <!-- SOULMORU -->
 			</Reward>
 		</Section>	
 		

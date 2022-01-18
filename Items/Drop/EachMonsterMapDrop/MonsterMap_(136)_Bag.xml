@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MonsterMapItemDrop>
 <!-- Armor Intermediate no-exc all class -->
-
+	
+  <DropItem MonsterID="895" MonsterElement="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="19"  Index="3" MinLevel="0" MaxLevel="0" Durability="0" Skill="1" Luck="-1" Option="0" Exc="-1" Element="0" SocketCount="0;0" Duration="0" Rate="30000" Name="PremiumBox" />
+  <DropItem MonsterID="896" MonsterElement="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="19"  Index="3" MinLevel="0" MaxLevel="0" Durability="0" Skill="1" Luck="-1" Option="0" Exc="-1" Element="0" SocketCount="0;0" Duration="0" Rate="30000" Name="PremiumBox" />
+  <DropItem MonsterID="897" MonsterElement="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="19"  Index="3" MinLevel="0" MaxLevel="0" Durability="0" Skill="1" Luck="-1" Option="0" Exc="-1" Element="0" SocketCount="0;0" Duration="0" Rate="30000" Name="PremiumBox" />
+  
+  
   <DropItem MonsterID="895" MonsterElement="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="13"  Index="466" MinLevel="0" MaxLevel="0" Durability="0" Skill="1" Luck="-1" Option="0" Exc="-1" Element="0" SocketCount="0;0" Duration="0" Rate="2000" Name="Garuda Flame" />
   <DropItem MonsterID="896" MonsterElement="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="13"  Index="466" MinLevel="0" MaxLevel="0" Durability="0" Skill="1" Luck="-1" Option="0" Exc="-1" Element="0" SocketCount="0;0" Duration="0" Rate="2000" Name="Garuda Flame" />
   <DropItem MonsterID="897" MonsterElement="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="13"  Index="466" MinLevel="0" MaxLevel="0" Durability="0" Skill="1" Luck="-1" Option="0" Exc="-1" Element="0" SocketCount="0;0" Duration="0" Rate="2000" Name="Garuda Flame" />
