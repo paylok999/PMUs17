@@ -4320,21 +4320,21 @@
 			<Spawn Index="479" Distance="0" StartX="122" StartY="135" Dir="1" /> <!-- Doorkeeper Titus -->
 		</Spot>
 		<Spot Type="1" Description="Multi-Spawn">
-			<Spawn Index="481" Distance="30" StartX="64" StartY="54" EndX="124" EndY="89" Dir="-1" Count="3" /> <!-- Zombie Fighter -->
-			<Spawn Index="481" Distance="30" StartX="65" StartY="12" EndX="105" EndY="47" Dir="-1" Count="3" />
-			<Spawn Index="481" Distance="30" StartX="22" StartY="10" EndX="64" EndY="98" Dir="-1" Count="4" />
-			<Spawn Index="483" Distance="30" StartX="21" StartY="128" EndX="77" EndY="186" Dir="-1" Count="4" /> <!-- Resurrected Gladiator -->
-			<Spawn Index="483" Distance="30" StartX="28" StartY="189" EndX="105" EndY="232" Dir="-1" Count="4" />
-			<Spawn Index="485" Distance="30" StartX="123" StartY="186" EndX="174" EndY="219" Dir="-1" Count="2" /> <!-- Ash Slaughterer -->
-			<Spawn Index="485" Distance="30" StartX="172" StartY="215" EndX="230" EndY="234" Dir="-1" Count="2" />
-			<Spawn Index="485" Distance="30" StartX="175" StartY="171" EndX="238" EndY="194" Dir="-1" Count="2" />
-			<Spawn Index="485" Distance="30" StartX="203" StartY="195" EndX="243" EndY="214" Dir="-1" Count="1" />
-			<Spawn Index="488" Distance="30" StartX="198" StartY="106" EndX="226" EndY="148" Dir="-1" Count="3" /> <!-- Cruel Blood Assassin -->
-			<Spawn Index="488" Distance="30" StartX="228" StartY="107" EndX="248" EndY="133" Dir="-1" Count="1" />
-			<Spawn Index="488" Distance="30" StartX="168" StartY="101" EndX="198" EndY="131" Dir="-1" Count="1" />
-			<Spawn Index="491" Distance="30" StartX="143" StartY="8" EndX="178" EndY="63" Dir="-1" Count="2" /> <!-- Ruthless Lava Giant -->
-			<Spawn Index="491" Distance="30" StartX="182" StartY="13" EndX="210" EndY="70" Dir="-1" Count="2" />
-			<Spawn Index="491" Distance="30" StartX="211" StartY="39" EndX="244" EndY="72" Dir="-1" Count="1" />
+			<Spawn Index="481" Distance="30" StartX="64" StartY="54" EndX="124" EndY="89" Dir="-1" Count="5" /> <!-- Zombie Fighter -->
+			<Spawn Index="481" Distance="30" StartX="65" StartY="12" EndX="105" EndY="47" Dir="-1" Count="5" />
+			<Spawn Index="481" Distance="30" StartX="22" StartY="10" EndX="64" EndY="98" Dir="-1" Count="5" />
+			<Spawn Index="483" Distance="30" StartX="21" StartY="128" EndX="77" EndY="186" Dir="-1" Count="5" /> <!-- Resurrected Gladiator -->
+			<Spawn Index="483" Distance="30" StartX="28" StartY="189" EndX="105" EndY="232" Dir="-1" Count="5" />
+			<Spawn Index="485" Distance="30" StartX="123" StartY="186" EndX="174" EndY="219" Dir="-1" Count="5" /> <!-- Ash Slaughterer -->
+			<Spawn Index="485" Distance="30" StartX="172" StartY="215" EndX="230" EndY="234" Dir="-1" Count="5" />
+			<Spawn Index="485" Distance="30" StartX="175" StartY="171" EndX="238" EndY="194" Dir="-1" Count="5" />
+			<Spawn Index="485" Distance="30" StartX="203" StartY="195" EndX="243" EndY="214" Dir="-1" Count="5" />
+			<Spawn Index="488" Distance="30" StartX="198" StartY="106" EndX="226" EndY="148" Dir="-1" Count="5" /> <!-- Cruel Blood Assassin -->
+			<Spawn Index="488" Distance="30" StartX="228" StartY="107" EndX="248" EndY="133" Dir="-1" Count="5" />
+			<Spawn Index="488" Distance="30" StartX="168" StartY="101" EndX="198" EndY="131" Dir="-1" Count="5" />
+			<Spawn Index="491" Distance="30" StartX="143" StartY="8" EndX="178" EndY="63" Dir="-1" Count="5" /> <!-- Ruthless Lava Giant -->
+			<Spawn Index="491" Distance="30" StartX="182" StartY="13" EndX="210" EndY="70" Dir="-1" Count="5" />
+			<Spawn Index="491" Distance="30" StartX="211" StartY="39" EndX="244" EndY="72" Dir="-1" Count="5" />
 		</Spot>
 		<Spot Type="2" Description="Single Point Monsters">
 			<Spawn Index="480" Distance="30" StartX="107" StartY="60" Dir="-1" /> <!-- Zombie Fighter -->
@@ -4399,6 +4399,11 @@
 			<Spawn Index="482" Distance="30" StartX="67" StartY="185" Dir="-1" />
 			<Spawn Index="482" Distance="30" StartX="50" StartY="159" Dir="-1" />
 			<Spawn Index="484" Distance="30" StartX="29" StartY="132" Dir="-1" /> <!-- Ash Slaughterer -->
+			<Spawn Index="484" Distance="30" StartX="68" StartY="160" Dir="-1" /> <!-- Ash Slaughterer -->
+			<Spawn Index="484" Distance="30" StartX="68" StartY="160" Dir="-1" /> <!-- Ash Slaughterer -->
+			<Spawn Index="484" Distance="30" StartX="68" StartY="160" Dir="-1" /> <!-- Ash Slaughterer -->
+			<Spawn Index="484" Distance="30" StartX="68" StartY="160" Dir="-1" /> <!-- Ash Slaughterer -->
+			<Spawn Index="484" Distance="30" StartX="68" StartY="160" Dir="-1" /> <!-- Ash Slaughterer -->
 			<Spawn Index="484" Distance="30" StartX="35" StartY="141" Dir="-1" />
 			<Spawn Index="484" Distance="30" StartX="33" StartY="178" Dir="-1" />
 			<Spawn Index="484" Distance="30" StartX="35" StartY="172" Dir="-1" />
