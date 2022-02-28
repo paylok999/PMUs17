@@ -596,8 +596,8 @@
 				<Item ItemCat="14" ItemIndex="62" Cost="10" />
 			</Input>
 			<Reward>
-				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="5" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- ges -->
-				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="4" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- ges -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- ges -->
+				<Item Cat="14" Index="468" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="1" Durability="10"/> <!-- ges -->
 			</Reward>
 		</Section>	
 		
