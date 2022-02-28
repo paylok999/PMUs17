@@ -23,10 +23,14 @@
 //	GeneralMultiplier: General multiplier of charge rate
 //	DiscountMultiplier: Additional discount multiplier of charge rate
 //	EventMultiplier: Additional event multiplier of charge rate
-//------------------------------------------------------------------------------------------------------------------------------
-//-- Money = ChargeRate(TimeRange) * GeneralMultiplier * (RegularLevel + MasterLevel) * DiscountMultiplier * EventMultiplier
-//------------------------------------------------------------------------------------------------------------------------------
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Money = ChargeRate(TimeRange) * GeneralMultiplier * (RegularLevel + MasterLevel) * DiscountMultiplier * EventMultiplier
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //	ChargeInterval: Charge interval for MuHelper use, minutes
+//
+// ### MuHelper::Cost ###
+//	RepairEnable: Enable or disable Guardian repair regardless user preferences, 0/1
+//	Durability: If guardian durability is lower than configured value the guardian will be repaired, 1-255
 //
 // ### MuHelper::Timing ###
 //	MaxUseTime: Maximum time MuHelper can be used for at a time, minutes
@@ -44,6 +48,7 @@
 
 <MuHelper Enable="1" MinLevel="80" MinVipLevel="0">
 	<Cost GeneralMultiplier="7.0" DiscountMultiplier="1.0" EventMultiplier="1.0" ChargeInterval="5" />
+	<Guardian RepairEnable="1" Durability="50" />
 	
 	<Timing MaxUseTime="1000">
 		<Range Min="0"   Max="200" ChargeRate="1.0"/>

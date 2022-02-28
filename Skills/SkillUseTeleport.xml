@@ -38,10 +38,10 @@
 	<Skill Index="38" Name="Decay" Enable="1" />
 	<Skill Index="39" Name="Ice Storm" Enable="1" />
 	<Skill Index="40" Name="Nova" Enable="1" />
-	<Skill Index="240" Name="Magical Shot" Enable="1" />
+	<Skill Index="240" Name="Magical Shot" Enable="0" />
 	<Skill Index="241" Name="Shining Bird" Enable="0" />
 	<Skill Index="242" Name="Dragon Violent" Enable="0" />
-	<Skill Index="243" Name="Spear Storm" Enable="1" />
+	<Skill Index="243" Name="Spear Storm" Enable="0" />
 	<Skill Index="244" Name="Reflection Barrier" Enable="1" />
 	<Skill Index="740" Name="Archangel's will" Enable="1" />
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -81,5 +81,5 @@
 	<Skill Index="1078" Name="Evil Spirit Enhancement Skill" Enable="1" />
 	<Skill Index="1220" Name="Shining Bird Enhancement Skill" Enable="0" />
 	<Skill Index="1221" Name="Dragon Violent Enhancement Skill" Enable="0" />
-	<Skill Index="1216" Name="Spear Storm Enhancement Skill" Enable="1" />
+	<Skill Index="1216" Name="Spear Storm Enhancement Skill" Enable="0" />
 </SkillUseTeleport>
