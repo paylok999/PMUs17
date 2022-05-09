@@ -92,7 +92,7 @@ function FireSlash_4thEnchant_Gladiator(InDamage, Strength, Energy, BarrageCount
 	return OutDamage
 end
 
-function WindSoul_4thEnchant_Lord(InDamage, Energy)
+function WindSoul_4thEnchant_Lord(InDamage, Strength, Dexterity, Vitality, Energy, Command)
 	local OutDamage = InDamage * (Energy / 25 + 200) / 100
 	
 	return OutDamage

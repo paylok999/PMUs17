@@ -187,10 +187,10 @@ function SlayerDamageCalc(Strength, Dexterity, Vitality, Energy)
 	local AttackDamageMinRight = 0
 	local AttackDamageMaxRight = 0
 	
-	AttackDamageMinLeft = (Dexterity / 20) + (Strength / 9) -- Minimum Left Hand Damage
-	AttackDamageMinRight = (Dexterity / 20) + (Strength / 9) -- Minimum Right Hand Damage
-	AttackDamageMaxLeft = (Dexterity / 14) + (Strength / 5) -- Maximum Left Hand Damage
-	AttackDamageMaxRight = (Dexterity / 14) + (Strength / 5) -- Maximum Right Hand Damage
+	AttackDamageMinLeft = (Dexterity / 10) + (Strength / 9) -- Minimum Left Hand Damage
+	AttackDamageMinRight = (Dexterity / 10) + (Strength / 9) -- Minimum Right Hand Damage
+	AttackDamageMaxLeft = (Dexterity / 6) + (Strength / 5) -- Maximum Left Hand Damage
+	AttackDamageMaxRight = (Dexterity / 6) + (Strength / 5) -- Maximum Right Hand Damage
 	
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
 end

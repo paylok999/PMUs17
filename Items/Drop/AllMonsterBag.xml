@@ -92,5 +92,5 @@
   <DropItem MonsterMinLevel="85" MonsterMaxLevel="878" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="13" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="1500" Name="Jewel of Bless" />
   <DropItem MonsterMinLevel="85" MonsterMaxLevel="878" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="16" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="1500" Name="Jewel of Life" />
   <DropItem MonsterMinLevel="85" MonsterMaxLevel="878" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="22" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="1500" Name="Jewel of Creation" />
-  <DropItem MonsterMinLevel="550" MonsterMaxLevel="560" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="41" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="10000" Name="gemstone" />
+  <DropItem MonsterMinLevel="550" MonsterMaxLevel="560" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="41" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="12000" Name="gemstone" />
 </AllMonsterItemDrop>

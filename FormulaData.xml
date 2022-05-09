@@ -113,8 +113,8 @@
 		<Formula ID="4" Data="(%d*0.3)" /> <!-- ItemDropLevel -->
 		<Formula ID="5" Data="(%d/3.5)" /> <!-- ItemDropLevel -->
 		<Formula ID="6" Data="(%d/100)*(%d/20)" /> <!-- ItemDropLevel, PlayerLevel -->
-		<Formula ID="7" Data="(((%d/200)+((%d*4)^1.11))" /> <!-- ItemDropLevel, PlayerLevel -->
-		<Formula ID="8" Data="(((%d/200)+((%d*3)^1.1))" /> <!-- ItemDropLevel, PlayerLevel -->
+		<Formula ID="7" Data="((%d/200)+((%d*4)^1.11))" /> <!-- ItemDropLevel, PlayerLevel -->
+		<Formula ID="8" Data="((%d/200)+((%d*3)^1.1))" /> <!-- ItemDropLevel, PlayerLevel -->
 	</ExcellentOption>
 	
 	<SetAddStatOption>

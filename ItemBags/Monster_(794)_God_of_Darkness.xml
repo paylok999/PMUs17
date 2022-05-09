@@ -24,5 +24,20 @@
 	<Drop Rate="5000" Count="2">
 		<Item Cat="14" Index="413" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="0" Option="0" Exc="0" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- miracle coin x2 -->
 	</Drop>
+	<Drop Rate="5000" Count="1">
+		<Item Cat="12" Index="335" ItemMinLevel="0" ItemMaxLevel="5" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- fire ss10 -->
+		<Item Cat="12" Index="336" ItemMinLevel="0" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- water ss10 -->
+		<Item Cat="12" Index="337" ItemMinLevel="0" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- ice ss10 -->
+		<Item Cat="12" Index="338" ItemMinLevel="0" ItemMaxLevel="5" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- wind ss10 -->
+		<Item Cat="12" Index="339" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- lightning ss10 -->
+		<Item Cat="12" Index="340" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- earth ss10 -->
+		
+		<Item Cat="12" Index="341" ItemMinLevel="0" ItemMaxLevel="5" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- fire ss11 -->
+		<Item Cat="12" Index="342" ItemMinLevel="0" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- water ss11 -->
+		<Item Cat="12" Index="343" ItemMinLevel="0" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- ice ss11 -->
+		<Item Cat="12" Index="344" ItemMinLevel="0" ItemMaxLevel="5" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- wind ss11 -->
+		<Item Cat="12" Index="345" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- lightning ss11 -->
+		<Item Cat="12" Index="346" ItemMinLevel="0" ItemMaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="1" /> <!-- earth ss11 -->
+	</Drop>
 </DropAllow>
 </ItemBag>

@@ -25,7 +25,7 @@
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
-<OffTrade Enable="0" CoinType="0" MaxTime="-1">
+<OffTrade Enable="1" CoinType="1" MaxTime="-1">
 	<Map Number="0"  Disable="0" /> <!-- Lorencia -->
 	<Map Number="1"  Disable="0" /> <!-- Dungeon (1 ~ 3) -->
 	<Map Number="2"  Disable="0" /> <!-- Devias -->
@@ -95,7 +95,7 @@
 	<Map Number="70" Disable="1" /> <!-- Imperial Fortress 2 -->
 	<Map Number="71" Disable="1" /> <!-- Imperial Fortress 3 -->
 	<Map Number="72" Disable="1" /> <!-- Imperial Fortress 4 -->
-	<Map Number="79" Disable="1" /> <!-- Loren Market -->
+	<Map Number="79" Disable="0" /> <!-- Loren Market -->
 	<Map Number="80" Disable="0" /> <!-- Karutan 1 -->
 	<Map Number="81" Disable="0" /> <!-- Karutan 2 -->
 	<Map Number="82" Disable="1" /> <!-- Dopple Ganger Renewal 1 -->

@@ -39,7 +39,9 @@
 //	ResetMasterLevel: Determines whether to reset master level, 0/1
 //	MoveToCharSelectWindow: Determines whether to force move to character selection screen after reset, 0/1
 //	StayOnPosition: Determines whether character should keep the same position after reset, 0/1
-//	MaxResetPoints: Maximum number of free level up points after reset.
+//	MaxResetPoints: Maximum number of free level up points after reset
+//	LevelAfterRese: Regular level to set after reset, minimum value is 1, free stat points are calculated and added automatically
+//	MasterLevelAfterReset: Master level to set after reset, used if set greater than 0, free stat points are calculated and added automatically
 //
 // ### ResetSystem::DynamicResetRangeList::Range ###
 //	MinReset: Minimum number of resets for actual range
@@ -86,7 +88,7 @@
 
 <ResetSystem Enable="0">
 <Requirements MinLevel="400" Cost="5000000" MultiplyCostPerResets="1" MaxCost="150000000" MaxReset="100" />
-<Settings RemoveEquipment="1" RemoveFromParty="1" EnableMuHelper="0" ClearBuffs="1" ResetStats="0" SaveOldStatPoint="0" ResetMasterLevel="0" MoveToCharSelectWindow="0" StayOnPosition="0" MaxResetPoints="0" />
+<Settings RemoveEquipment="1" RemoveFromParty="1" EnableMuHelper="0" ClearBuffs="1" ResetStats="0" SaveOldStatPoint="0" ResetMasterLevel="0" MoveToCharSelectWindow="0" StayOnPosition="0" MaxResetPoints="0" LevelAfterRese="1" MasterLevelAfterReset="0" />
 
 	<DynamicResetRangeList> <!-- First rule that matches player requirements will be applied, therefore order of entries matters -->
 		<Range MinReset="0" MaxReset="10" MilestoneID="0" RewardSetID="0" />

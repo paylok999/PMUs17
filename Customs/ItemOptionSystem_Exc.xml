@@ -15,6 +15,7 @@
 //	Cat: Group of item, see ItemList.xml
 //	Index: Index of item, see ItemList.xml
 //	MinLevel: Minimum level of item to qualify it for the option
+//	SocketCount: Minimum count of sockets of item to qualify it for the option
 //	Option Index:
 //		~ 0: Total amount of HP is reduced to half, (Probability %)
 //		~ 1: Attack speed is reduced to half, (Probability %)
@@ -77,15 +78,15 @@
 
 <ItemOptionSystem Enabled="0" Password="12345678">
 	<Items>
-		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="0" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
-		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="1" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
-		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="2" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
-		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="3" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
-		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="4" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
-		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="5" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
-		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="6" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
-		<Item Cat="4" Index="40" MinLevel="5" OptionIndex="4" OptionValue="10000" OptionProbability="100" Ancient="-1" Excellent="0" />
-		<Item Cat="13" Index="37" MinLevel="0" OptionIndex="7" OptionValue="1000" OptionProbability="0" Ancient="-1" Excellent="0" /> 
+		<Item Cat="5" Index="10" MinLevel="15" SocketCount="0" OptionIndex="0" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" SocketCount="0" OptionIndex="1" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" SocketCount="0" OptionIndex="2" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" SocketCount="0" OptionIndex="3" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" SocketCount="0" OptionIndex="4" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" SocketCount="0" OptionIndex="5" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" SocketCount="0" OptionIndex="6" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="4" Index="40" MinLevel="5" SocketCount="0" OptionIndex="4" OptionValue="10000" OptionProbability="100" Ancient="-1" Excellent="0" />
+		<Item Cat="13" Index="37" MinLevel="0" SocketCount="0" OptionIndex="7" OptionValue="1000" OptionProbability="0" Ancient="-1" Excellent="0" /> 
 	</Items>
 	<OptionText>
 		<Text OptionId="0" ColorID="6" Title="Max HP is reduced by %d%% (Chance %d%%)" />
