@@ -142,7 +142,7 @@ function ComboSkillDamage(Strength, Dexterity, Vitality, Energy, InDamage)
 end
 
 -- SkillID: 731, Ice Blood
-function GladiatorIceBloodCalcDamageAndDot(InDamage, Energy)
+function GladiatorIceBloodCalcDamageAndDot(InDamage, Strength, Energy)
 	local OutDamage = InDamage * 2
 	local SuccessRate = 6
 	local DebuffTime = 10

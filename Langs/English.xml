@@ -48,7 +48,7 @@
 		<Msg ID="19" Text="%s is the lucky winner of the Love PangPang event." />
 		<Msg ID="20" Text="You are going to party with %s" />
 		<Msg ID="21" Text="%s is already in a party." />
-		<Msg ID="22" Text="You are connecting as free user." />
+		<Msg ID="22" Text="VIP Status set to: NONE" />
 		<Msg ID="23" Text="You have %d minute(s) remaining for IP usage (%s)" />
 		<Msg ID="24" Text="This account is valid until %2d %2d %4d (%s)" />
 		<Msg ID="25" Text="This IP is valid until %2d %2d %4d (%s)" />
@@ -519,7 +519,7 @@
 		<Msg ID="490" Text="Infinity Arrow activated, Time: %d sec" />
 		<Msg ID="491" Text="You need 220 level." />
 		<Msg ID="492" Text="FireScream Explosion Attack Distance: %d" />
-		<Msg ID="493" Text="Status changed to: VIP! [%s]" />
+		<Msg ID="493" Text="VIP Status set to: [%s]" />
 		<Msg ID="494" Text="%d MINUTE(S) LEFT UNTIL ILLUSION TEMPLE CHAMPIONSHIP OPENS" />
 		<Msg ID="495" Text="You cannot enter the Illusion Temple Championship any more." />
 		<Msg ID="496" Text="%d MINUTE(S) LEFT UNTIL ILLUSION TEMPLE OPENS" />

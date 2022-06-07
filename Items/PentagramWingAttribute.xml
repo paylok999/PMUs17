@@ -32,7 +32,7 @@
 	<ErrtelAddSucessRate Level0="1" Level1="2" Level2="3" Level3="5" Level4="15" Level5="25" Level6="40" Level7="50" Level8="60" Level9="75" Level10="90" />
 	<MainOption Value0="25" Value1="35" Value2="45" Value3="55" Value4="65" Value5="75" Value6="85" Value7="96" Value8="107" Value9="118" Value10="130" Value11="142" Value12="154" Value13="167" Value14="180" Value15="193" Name="Elemental Defense Increase" />      
 
-	<AdditionalOptions ApplyChanceRate="750">          
+	<AdditionalOptions ApplyChanceRate="3000">          
 		<Option Index="0" Rate="130000" Value0="20" Value1="23" Value2="27" Value3="32" Value4="38" Value5="45" Value6="53" Value7="62" Value8="72" Value9="83" Value10="95" Value11="108" Value12="122" Value13="137" Value14="153" Value15="170" Name="Elemental Damage Increase" />
 		<Option Index="1" Rate="130000" Value0="5" Value1="10" Value2="15" Value3="20" Value4="26" Value5="32" Value6="38" Value7="45" Value8="52" Value9="59" Value10="67" Value11="75" Value12="84" Value13="93" Value14="104" Value15="125" Name="Elemental Attack Success Rate Increase" />
 		<Option Index="2" Rate="130000" Value0="5" Value1="10" Value2="15" Value3="20" Value4="26" Value5="32" Value6="38" Value7="45" Value8="52" Value9="59" Value10="67" Value11="75" Value12="84" Value13="93" Value14="104" Value15="125" Name="Elemental Defense Success Rate Increase" />

@@ -395,6 +395,10 @@ function LoadItemBag() -- Bags Load
 	-- premium box --
 	AddItemBag(BAG_INVENTORY, MakeItemID(19,3),0, 'Item_(19,3,0)_Premium_Box') -- DropFunction /1/
 	AddItemBag(BAG_INVENTORY, MakeItemID(19,3),1, 'Item_(19,3,1)_Premium_Box') -- DropFunction /1/
+	AddItemBag(BAG_INVENTORY, MakeItemID(19,3),2, 'Item_(19,3,2)_Premium_Box') -- DropFunction /1/
+	AddItemBag(BAG_INVENTORY, MakeItemID(19,3),3, 'Item_(19,3,3)_Premium_Box') -- DropFunction /1/
+	AddItemBag(BAG_INVENTORY, MakeItemID(19,3),4, 'Item_(19,3,4)_Premium_Box') -- DropFunction /1/
+	AddItemBag(BAG_INVENTORY, MakeItemID(19,3),5, 'Item_(19,3,5)_Premium_Box') -- DropFunction /1/
 
 -- ====================================================================
 -- MonsterBags -- BagType, 0, MonsterID, 'FileName'

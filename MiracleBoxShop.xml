@@ -505,12 +505,6 @@
 			<Reward>
 				<Item Cat="14" Index="447" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="10" Durability="1"/> <!-- ruud 2k -->
 				<Item Cat="14" Index="448" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="0" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="10" Durability="1"/> <!-- ruud 3k -->
-				
-				<Item Cat="19" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="-2" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="3" Durability="1"/> <!-- premium box -->
-				<Item Cat="19" Index="3" MinLevel="1" MaxLevel="1" Skill="1" Luck="0" Option="-1" Exc="-2" SetItem="1" SocketCount="1" ElementalItem="-1" Rate="10" Durability="1"/> <!-- premium box -->
-				<Item Cat="12" Index="306" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="-2" SetItem="1" SocketCount="-2" ElementalItem="-1" Rate="2" Durability="5"/> <!-- runedil-->
-				<Item Cat="12" Index="307" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="-2" SetItem="1" SocketCount="-2" ElementalItem="-1" Rate="2" Durability="5"/> <!-- lemuria-->
-				<Item Cat="12" Index="308" MinLevel="0" MaxLevel="0" Skill="1" Luck="0" Option="-1" Exc="-2" SetItem="1" SocketCount="-2" ElementalItem="-1" Rate="2" Durability="5"/> <!-- lyra-->
 				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- toca -->
 				<Item Cat="14" Index="190" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- etoca -->
 				<Item Cat="14" Index="477" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- seal of ghost horse -->
@@ -524,22 +518,10 @@
 				<Item Cat="12" Index="339" MinLevel="0" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- lightining ss10 -->
 				<Item Cat="12" Index="340" MinLevel="0" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- earth  ss10-->
 				<Item Cat="14" Index="497" MinLevel="0" MaxLevel="3" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- Glory of Honor -->
-				<Item Cat="0" Index="62" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul sword -->
-				<Item Cat="0" Index="63" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul magic sword-->
-				<Item Cat="0" Index="64" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul  claw-->
-				<Item Cat="0" Index="74" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul short sword-->
-				<Item Cat="0" Index="92" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul 2 sword-->
-				<Item Cat="2" Index="36" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul scepter-->
-				<Item Cat="2" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul runemace-->
-				<Item Cat="3" Index="28" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul lance-->
-				<Item Cat="3" Index="28" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul lance-->
-				<Item Cat="4" Index="38" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul bow-->
-				<Item Cat="4" Index="39" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul quiver-->
-				<Item Cat="4" Index="51" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul gun-->
-				<Item Cat="5" Index="55" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul staff-->
-				<Item Cat="5" Index="56" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul stick-->
-				<Item Cat="5" Index="60" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-3;2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1"/> <!-- soul book-->
 				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="1"/> <!-- garuda feather -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="3"/> <!-- golden sentence -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="4"/> <!-- golden sentence -->
+				<Item Cat="13" Index="468" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1" Durability="5"/> <!-- golden sentence -->
 			</Reward>
 		</Section>	
 		

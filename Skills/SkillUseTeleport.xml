@@ -77,7 +77,7 @@
 	<Skill Index="863" Name="Reflection Barrier Mastery" Enable="1" />
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<Skill Index="1075" Name="Meteor Strike Enhancement Skill" Enable="1" />
-	<Skill Index="1076" Name="Meteor Storm Enhancement Skill" Enable="0" />
+	<Skill Index="1076" Name="Meteor Storm Enhancement Skill" Enable="1" />
 	<Skill Index="1078" Name="Evil Spirit Enhancement Skill" Enable="1" />
 	<Skill Index="1220" Name="Shining Bird Enhancement Skill" Enable="0" />
 	<Skill Index="1221" Name="Dragon Violent Enhancement Skill" Enable="0" />
