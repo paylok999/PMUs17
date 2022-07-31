@@ -46,17 +46,19 @@
 //	MaxValue: Maximum amount of Ruud to award with
 //
 // ### ItemBag::DropAllow ### - by setting lower class the higher one automatically is being allowed
-//	Wizard: 0 - Disallow, 1 - Dark Wizard, 2 - Soul Master, 3 - Grand Master, 4 - Soul Wizard
-//	Knight: 0 - Disallow, 1 - Dark Knight, 2 - Blade Knight, 3 - Blade Master, 4 - Dragon Knight
-//	FairyElf: 0 - Disallow, 1 - Fairy Elf, 2 - Muse Elf, 3 - High Elf, 4 - Noble Elf
-//	MagicGladiator: 0 - Disallow, 1 - Magic Gladiator, 2 - Duel Master, 4 - Magic Knight
-//	DarkLord: 0 - Disallow, 1 - Dark Lord, 2 - Lord Emperor, 4 - Empire Lord
-//	Summoner: 0 - Disallow, 1 - Summoner, 2 - Bloody Summoner, 3 - Dimension Master, 4 - Dimension Summoner
-//	RageFighter: 0 - Disallow, 1 - Rage Fighter, 2 - Fist Master, 4 - Fist Blazer
-//	GrowLancer: 0 - Disallow, 1 - Grow Lancer, 2 - Miracle Lancer, 4 - Shining Lancer
-//	RuneWizard: 0 - Disallow, 1 - Rune Wizard, 2 - Rune Spell Master, 4 - Rune Grand Master
-//	Slayer: 0 - Disallow, 1 - Slayer, 2 - Royal Slayer, 3 - Master Slayer, 4 - Slaughterer
-//	GunCrusher: 0 - Disallow, 1 - Gun Crusher, 2 - Gun Breaker, 3: Master Gun Breaker, 4 - Heist Gun Crusher
+//	DW: 0 - Disallow, 1 - Dark Wizard, 2 - Soul Master, 3 - Grand Master, 4 - Soul Wizard
+//	DK: 0 - Disallow, 1 - Dark Knight, 2 - Blade Knight, 3 - Blade Master, 4 - Dragon Knight
+//	ELF: 0 - Disallow, 1 - Fairy Elf, 2 - Muse Elf, 3 - High Elf, 4 - Noble Elf
+//	MG: 0 - Disallow, 1 - Magic Gladiator, 2 - Duel Master, 4 - Magic Knight
+//	DL: 0 - Disallow, 1 - Dark Lord, 2 - Lord Emperor, 4 - Empire Lord
+//	SU: 0 - Disallow, 1 - Summoner, 2 - Bloody Summoner, 3 - Dimension Master, 4 - Dimension Summoner
+//	RF: 0 - Disallow, 1 - Rage Fighter, 2 - Fist Master, 4 - Fist Blazer
+//	GL: 0 - Disallow, 1 - Grow Lancer, 2 - Miracle Lancer, 4 - Shining Lancer
+//	RW: 0 - Disallow, 1 - Rune Wizard, 2 - Rune Spell Master, 4 - Rune Grand Master
+//	SLA: 0 - Disallow, 1 - Slayer, 2 - Royal Slayer, 3 - Master Slayer, 4 - Slaughterer
+//	GC: 0 - Disallow, 1 - Gun Crusher, 2 - Gun Breaker, 3 - Master Gun Breaker, 4 - Heist Gun Crusher
+//	LW: 0 - Disallow, 1 - Light Wizard, 2 - Light Master, 3 - Shining Wizard, 4 - Luminous Wizard
+//	LM: 0 - Disallow, 1 - Lemuria Mage, 2 - Warmage, 3 - Archmage, 4 - Mystic Mage
 //	PlayerMinLevel: Minimum level of player to apply drop of items from the section (must be lower or equal to PlayerMaxLevel)
 //	PlayerMaxLevel: Maximum level of player to apply drop of items from the section (must be greater or equal to PlayerMinLevel)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,22 +81,27 @@
 //	Luck: 0 - no Luck, -1 - Random (50/50% chance), 1 - with Luck
 //	Option: 0 - no Option, -1 - Random, 1,2,3,4,5,6,7 - with specified option - +4,+8,+12,+16,+20,+24,+28
 //	Exc:
-//		-1: No exc option
-//		-2: Random count of random options (based on rates from ExcellentOptions.xml)
-//		-3;X: Specified count of random options, the 'X' defines count of excellent options, max 9 (options selection based on rates from ExcellentOptions.xml)
-//		-10: A draw of excellent options set from MasteryExcOptions.xml. If used, the skill and luck attributes from this file are ignored, see referred file for further details.
-//		X;X;X;X;X;X;X;X;X: Defined excellent options, the 'X' is excellent option ID based on ExcellentOptions.xml, maximum 9 options can be defined
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//~~ Advanced config notes: The values -1, -2 and -3 are stored under Exc1 variable in ItemBagScript.lua, the options count (X) for -3 value is stored under Exc2 variable
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//	SetItem: 0 ~ no ancient, 1 ~ ancient (random Tier of specified item) - must be added as ancient, otherwise option will be ignored
-//	SocketInfo: Optional argument defining socket options on specific slot (at present works only with Guardian items, more to be added with future updates)
+//		Excellent Options:
+//			-1: No exc option
+//			-2: Random count of random options (based on rates from ExcellentOptions.xml)
+//			-3;X: Specified count of random options, the 'X' defines count of excellent options, max 9 (options selection based on rates from ExcellentOptions.xml)
+//			-10: A draw of bonus and excellent options set from MasteryExcOptions.xml. If used, the skill and luck attributes from this file are ignored, see referred file for further details.
+//			X;X;X;X;X;X;X;X;X: Defined excellent options, the 'X' is excellent option ID based on ExcellentOptions.xml, maximum 9 options can be defined
+//		Grade Options (4th Wings):
+//			-1: No grade option
+//			-2: Random count of random options (based on rates from ItemGradeOption.xml)
+//			-3;X: Specified count of random options, the 'X' defines count of grade options, max 4 (options selection based on rates from ItemGradeOption.xml)
+//			ID1;LV1;ID2;LV2;ID3;LV3;ID4;LV4: Defines grade option index and option level, the 'IDX' is grade option index and LVX is grade option level based on Index and GradeXVal (0-9) from ItemGradeOption.xml, maximum 4 options can be defined
 //		Guardian Items:
 //			-1: No option
 //			-2;X: Random count of random options (based on rates from GuardianItemOption.xml), the 'X' takes value 0 or 1, determining whether to generate random elite option or not
 //			-3;X;Y: Specified count of random options, the 'X' defines count of options, max 4, the 'Y' takes value 0 or 1, determining whether to generate random elite option or not
 //			X;X;X;X;Y: Defines specific options, the 'X' is guardian regular option index from GuardianItemOption.xml::OptionList section, maximum 4 options can be defined, -1 if not applies, the Y is elite option index from GuardianItemOption.xml::EliteOptionList, must be defined as 5th argument, -1 if not applies
 //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Advanced config notes: The values -1, -2 and -3 are stored under Exc1 variable in ItemBagScript.lua, the options count (X) for -3 value is stored under Exc2 variable
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	SetItem: 0 ~ no ancient, 1 ~ ancient (random Tier of specified item) - must be added as ancient, otherwise option will be ignored
 //	SocketCount:
 //		0: no Socket slots
 //		1: up to one slot

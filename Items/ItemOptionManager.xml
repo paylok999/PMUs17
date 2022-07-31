@@ -328,7 +328,7 @@
 	</Section>
 
 	<Section ID="69">
-		<Item Cat="14" Index="231" Option1="55" Value1="25" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Battle -->
+		<Item Cat="14" Index="231" Option1="55" Value1="0" Option2="0" Value2="0" Time="1800" /> <!-- Scroll Master of Battle -->
 	</Section>
 
 	<Section ID="70">

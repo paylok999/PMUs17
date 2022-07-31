@@ -53,7 +53,7 @@
 	<QuestInfo Index="0" Type="2" SubType="235" Name="Locate the Scroll of the Emperor!">
 		<QuestJob>
 			<Job Type="1" ReqItemCat="14" ReqItemIndex="23" ItemLevel="0" ItemCount="1" MonsterMinLevel="45" MonsterMaxLevel="60" DropRate="5000" RewardType="200" RewardSubType="0" RewardCount="10" LinkConditionIndex="0" DarkWizard="1" DarkKnight="1" FairyElf="1" MagicGladiator="0" DarkLord="0" Summoner="1" RageFighter="0" GrowLancer="0" RuneWizard="1" Slayer="1" GunCrusher="1" LightWizard="1" LemuriaMage="1" />
-			<Job Type="1" ReqItemCat="14" ReqItemIndex="23" ItemLevel="0" ItemCount="1" MonsterMinLevel="45" MonsterMaxLevel="60" DropRate="5000" RewardType="200" RewardSubType="0" RewardCount="10" LinkConditionIndex="1" DarkWizard="0" DarkKnight="0" FairyElf="0" MagicGladiator="1" DarkLord="1" Summoner="0" RageFighter="1" GrowLancer="0" RuneWizard="0" Slayer="0" GunCrusher="0" />
+			<Job Type="1" ReqItemCat="14" ReqItemIndex="23" ItemLevel="0" ItemCount="1" MonsterMinLevel="45" MonsterMaxLevel="60" DropRate="5000" RewardType="200" RewardSubType="0" RewardCount="10" LinkConditionIndex="1" DarkWizard="0" DarkKnight="0" FairyElf="0" MagicGladiator="1" DarkLord="1" Summoner="0" RageFighter="1" GrowLancer="0" RuneWizard="0" Slayer="0" GunCrusher="0" LightWizard="0" LemuriaMage="0" />
 		</QuestJob>
 		
 		<QuestCondition>

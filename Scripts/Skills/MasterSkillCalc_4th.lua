@@ -23,6 +23,8 @@ CLASS_GROWLANCER									  = 7
 CLASS_RUNEWIZARD									  = 8
 CLASS_SLAYER										  = 9
 CLASS_GUNCRUSHER									  = 10
+CLASS_LIGHTWIZARD									  = 11
+CLASS_LEMURIAMAGE									  = 12
 
 -- SkillID: 1078, 1088, Evil Spirit Enhancement Skill
 function EvilSpiritCalc_4thEnchant(Class, InDamage, Strength, Dexterity, Vitality, Energy)
@@ -49,10 +51,10 @@ function AngerBlow_4thEnchant(Class, InDamage, Strength, Dexterity, Vitality, En
 	return OutDamage
 end
 
-function FireBlow_4thEnchant_Knight(InDamage, Energy)
-	local OutDamage = (InDamage * ( 200 + ( Energy / 10 ) ) ) / 100;
+function FireBlow_4thEnchant_Knight(InDamage, Strength, Dexterity, Vitality, Energy)
+    local OutDamage = (InDamage * ( 200 + ( Energy / 10 ) ) ) / 100;
 
-	return OutDamage
+    return OutDamage
 end
 
 function FireBlood_4thEnchant_Gladiator(InDamage, Strength, Energy)

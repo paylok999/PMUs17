@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2020 IGC-Network (R)
+// == (C) 2022 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -16,10 +16,16 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 // ### ResetSystem::Requirements ###
-//	MinLevel: Minimum regular level to perform reset
+//	MinLevelMode: Minimum level check mode:
+//		~ 0: Regular level only
+//		~ 1: Master level only
+//		~ 2: Regular + master level
+//
+//	MinLevel: Minimum level to perform reset
 //	Cost: Cost of the reset in Zen, max value: 200000000
 //	MultiplyCostPerResets: Multiply cost by number of resets, 0/1
 //	MaxCost: maximum cost of reset in Zen, max value: MaxCost
+//	MinVipType: Minimum VIP Level to use Restets System
 //	MaxReset: Maximum number of resets
 //
 // ### ResetSystem::Settings ###
@@ -86,9 +92,9 @@
 //
 -->
 
-<ResetSystem Enable="0">
-<Requirements MinLevel="400" Cost="5000000" MultiplyCostPerResets="1" MaxCost="150000000" MaxReset="100" />
-<Settings RemoveEquipment="1" RemoveFromParty="1" EnableMuHelper="0" ClearBuffs="1" ResetStats="0" SaveOldStatPoint="0" ResetMasterLevel="0" MoveToCharSelectWindow="0" StayOnPosition="0" MaxResetPoints="0" LevelAfterRese="1" MasterLevelAfterReset="0" />
+<ResetSystem Enable="1">
+<Requirements MinLevelMode="0" MinLevel="400" Cost="5000000" MultiplyCostPerResets="1" MaxCost="150000000" MaxReset="100" MinVipType="0" />
+<Settings RemoveEquipment="1" RemoveFromParty="1" EnableMuHelper="0" ClearBuffs="1" ResetStats="0" SaveOldStatPoint="0" ResetMasterLevel="0" MoveToCharSelectWindow="0" StayOnPosition="0" MaxResetPoints="0" LevelAfterReset="1" MasterLevelAfterReset="0" />
 
 	<DynamicResetRangeList> <!-- First rule that matches player requirements will be applied, therefore order of entries matters -->
 		<Range MinReset="0" MaxReset="10" MilestoneID="0" RewardSetID="0" />

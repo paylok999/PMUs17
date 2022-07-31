@@ -25,7 +25,7 @@
 //
 // ### EarringAttribute::OptionLinkSettings::Option ###
 //	LinkID: Unique identifier of option link
-//	IndexX: Option index (1-5)
+// IndexX: Option index (1-5), check OptionsList section for available option indexes
 //		9: Attack Speed Increase
 //		11: Maximum Life Increase
 //		12: Maximum Mana Increase

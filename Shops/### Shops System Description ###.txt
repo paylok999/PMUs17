@@ -19,6 +19,12 @@
 //	Luck: Apply Luck on item, 0/1
 //	Option: 0-7 (Opt * 4, example, Opt -> 7 * 4 = Item Option +28
 //	Exc:
+//		Excellent Options:
+//			-1: No exc option
+//			X;X;X;X;X;X;X;X;X: Defines excellent options, the 'X' is excellent option ID based on ExcellentOptions.xml, maximum 9 options can be defined
+//		Grade Options (4th Wings):
+//			-1: No grade option
+//			ID1;LV1;ID2;LV2;ID3;LV3;ID4;LV4: Defines grade option index and option level, the 'IDX' is grade option index and LVX is grade option level based on Index and GradeXVal (0-9) from ItemGradeOption.xml, maximum 4 options can be defined
 //		-1: No exc option
 //		X;X;X;X;X;X;X;X;X: Defined excellent options, the 'X' is excellent option ID based on ExcellentOptions.xml, maximum 9 options can be defined
 //

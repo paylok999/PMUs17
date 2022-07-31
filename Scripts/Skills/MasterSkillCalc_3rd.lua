@@ -1451,7 +1451,7 @@ function LightWizardDragonViolent_MasterLevel1_Calc(InDamage, Strength, Dexterit
 	
 	if (BarrageCount == 1) then
 		OutDamage = ((InDamage * 1.0) * ((Energy / 50) + 200) + SkillTreeValue) / 100
-	elseif (BarrageCount == 1) then
+	elseif (BarrageCount == 2) then
 		OutDamage = ((InDamage * 1.0) * ((Energy / 50) + 200) + SkillTreeValue) / 100
 	end
 
@@ -1464,7 +1464,7 @@ function LightWizardDragonViolent_MasterLevel2_Calc(InDamage, Strength, Dexterit
 	
 	if (BarrageCount == 1) then
 		OutDamage = ((InDamage * 1.0) * ((Energy / 50) + 200) + SkillTreeValue) / 100
-	elseif (BarrageCount == 1) then
+	elseif (BarrageCount == 2) then
 		OutDamage = ((InDamage * 1.0) * ((Energy / 50) + 200) + SkillTreeValue) / 100
 	end
 

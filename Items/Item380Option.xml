@@ -43,7 +43,7 @@
 //	8: SD Recovery Rate increase +%d
 -->
 	<ItemOption> <!-- Used to define 380 level item options only, time is unused in this section -->
-		<Item Cat="0" Index="22" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Explosion Blade -->
+		<Item Cat="0" Index="22" Option1="2" Value1="500" Option2="1" Value2="10" Time="0" /> <!-- Explosion Blade -->
 		<Item Cat="0" Index="23" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Daybreak -->
 		<Item Cat="4" Index="21" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Sylph Wind Bow -->
 		<Item Cat="5" Index="12" Option1="2" Value1="200" Option2="1" Value2="10" Time="0" /> <!-- Grand Viper Staff -->

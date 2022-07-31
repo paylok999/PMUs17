@@ -9,9 +9,12 @@
 // ============================================================
 //
 //
+// ### SpiritStoneExchange ###
+//	AllowAllItemType: If enabled, the system will allow exchange without item types restriction, e.g. will acceppt "380 item" type, 0/1
+//
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
-<SpiritStoneExchange>
+<SpiritStoneExchange AllowAllItemType="1">
 	<StoneSettings>
 		<Stone ID="0" Cat="12" Index="404" ZenDiv="20000" />
 		<Stone ID="1" Cat="12" Index="405" ZenDiv="500000" />

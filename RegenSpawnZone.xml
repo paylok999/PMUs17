@@ -22,11 +22,14 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 // ### RegenSpawnZone::Map::Zone ###
-//	Id: Unique ID of respawn zone, 0-9
+//	Id: Unique ID of respawn zone, 0-14
 //	TargetMapNumber: Target Map number for spawn, -1 to use current map
-//	PosX: The X coordinate, 1-255
-//	PosY: The Y coordinate, 1-255
-//	Rate: Chance rate to use selected zone
+//	StartX: Start X Coordinate of spawn area after warping
+//	StartY: Start Y Coordinate of spawn area after warping
+//	EndX: End X Coordinate of spawn area after warping
+//	EndY: End Y Coordinate of spawn area after warping
+//	AllowSafeZone: Determines whether to allow safe zone as selected spawn location from configured coordinates range, 0/1
+//	Rate: Chance rate to use selected zone, sum of all rates within specific map is total chance rate for that map, weight
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ Maximum 10 zones per map. Total rate is sum of all rates per map
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,7 +39,7 @@
 
 <RegenSpawnZone>
 	<Map Number="40" DieLocationRate="500" DieLocationMsg="1">
-		<Zone Id="0" TargetMapNumber="-1" PosX="233" PosY="17" Rate="2000" />
-		<Zone Id="1" TargetMapNumber="-1" PosX="233" PosY="13" Rate="1000" />
+		<Zone Id="0" TargetMapNumber="-1" StartX="1" StartY="1" EndX="255" EndY="255" AllowSafeZone="1" Rate="2000" />
+		<Zone Id="1" TargetMapNumber="-1" StartX="1" StartY="1" EndX="255" EndY="255" AllowSafeZone="1" Rate="1000" />
 	</Map>
 </RegenSpawnZone>
