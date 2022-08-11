@@ -16,6 +16,7 @@
 	<Package GUID="2" ID="0" ItemSequence="2" UniqueID1="1152" UniqueID2="1778" Description="Scroll of Swiftness Master - 1 Day" />
 	<Package GUID="3" ID="0" ItemSequence="3" UniqueID1="1149" UniqueID2="1766" Description="Scroll Master of Recovery - 1 Day" />
 	<Package GUID="4" ID="0" ItemSequence="4" UniqueID1="971" UniqueID2="1296" Description="Scroll Master of Defense - 1 Day" />
+	<Package GUID="5" ID="0" ItemSequence="4" UniqueID1="1352" UniqueID2="2233" Description="Talisman of Item Protection - 7 Days" />
 	<Package GUID="0" ID="2" ItemSequence="0" UniqueID1="1200" UniqueID2="1889" Description="1st Lucky Armor Ticket" />
 	<Package GUID="1" ID="2" ItemSequence="1" UniqueID1="1201" UniqueID2="1891" Description="1st Lucky Pants Ticket" />
 	<Package GUID="2" ID="2" ItemSequence="2" UniqueID1="1202" UniqueID2="1893" Description="1st Lucky Helm Ticket" />
@@ -31,6 +32,7 @@
 	<Package GUID="2" ID="9" ItemSequence="2" UniqueID1="1152" UniqueID2="1778" Description="Scroll of Swiftness Master - 1 Day" />
 	<Package GUID="3" ID="9" ItemSequence="3" UniqueID1="1149" UniqueID2="1766" Description="Scroll Master of Recovery - 1 Day" />
 	<Package GUID="4" ID="9" ItemSequence="4" UniqueID1="1144" UniqueID2="1746" Description="Scroll Master of Defense - 1 Day" />
+	<Package GUID="5" ID="9" ItemSequence="4" UniqueID1="1352" UniqueID2="2233" Description="Talisman of Item Protection - 7 Days" />
 	<Package GUID="0" ID="11" ItemSequence="0" UniqueID1="1152" UniqueID2="1778" Description="Scroll of Swiftness Master - 1 Day" />
 	<Package GUID="1" ID="11" ItemSequence="1" UniqueID1="1148" UniqueID2="1762" Description="Scroll Master of Wrath - 1 Day" />
 	<Package GUID="2" ID="11" ItemSequence="2" UniqueID1="1158" UniqueID2="1802" Description="Max AG Boost Aura - 1 Day" />
@@ -38,6 +40,7 @@
 	<Package GUID="4" ID="11" ItemSequence="4" UniqueID1="1144" UniqueID2="1746" Description="Scroll Master of Defense - 1 Day" />
 	<Package GUID="5" ID="11" ItemSequence="5" UniqueID1="1149" UniqueID2="1766" Description="Scroll Master of Recovery - 1 Day" />
 	<Package GUID="6" ID="11" ItemSequence="6" UniqueID1="1146" UniqueID2="1754" Description="Scroll Master of Health - 1 Day" />
+	<Package GUID="7" ID="11" ItemSequence="4" UniqueID1="1352" UniqueID2="2233" Description="Talisman of Item Protection - 7 Days" />
 	<Package GUID="0" ID="12" ItemSequence="0" UniqueID1="1152" UniqueID2="1778" Description="Scroll of Swiftness Master - 1 Day" />
 	<Package GUID="1" ID="12" ItemSequence="1" UniqueID1="1158" UniqueID2="1802" Description="Max AG Boost Aura - 1 Day" />
 	<Package GUID="2" ID="12" ItemSequence="2" UniqueID1="1161" UniqueID2="1814" Description="Scroll Master of Strenghener - 1 Day" />
@@ -45,6 +48,7 @@
 	<Package GUID="4" ID="12" ItemSequence="4" UniqueID1="1149" UniqueID2="1766" Description="Scroll Master of Recovery - 1 Day" />
 	<Package GUID="5" ID="12" ItemSequence="5" UniqueID1="1146" UniqueID2="1754" Description="Scroll Master of Health - 1 Day" />
 	<Package GUID="6" ID="12" ItemSequence="6" UniqueID1="1145" UniqueID2="1750" Description="Scroll Master of Wizardry - 1 Day" />
+	<Package GUID="7" ID="12" ItemSequence="4" UniqueID1="1352" UniqueID2="2233" Description="Talisman of Item Protection - 7 Days" />
 	<Package GUID="0" ID="13" ItemSequence="0" UniqueID1="1146" UniqueID2="1756" Description="Scroll Master of Health - 7 Days" />
 	<Package GUID="1" ID="13" ItemSequence="1" UniqueID1="1161" UniqueID2="1816" Description="Scroll Master of Strenghener - 7 Days" />
 	<Package GUID="2" ID="13" ItemSequence="2" UniqueID1="1152" UniqueID2="1780" Description="Scroll of Swiftness Master - 7 Days" />
@@ -52,6 +56,7 @@
 	<Package GUID="4" ID="13" ItemSequence="4" UniqueID1="1144" UniqueID2="1748" Description="Scroll Master of Defense - 7 Days" />
 	<Package GUID="5" ID="13" ItemSequence="5" UniqueID1="1148" UniqueID2="1764" Description="Scroll Master of Wrath - 7 Days" />
 	<Package GUID="6" ID="13" ItemSequence="6" UniqueID1="1158" UniqueID2="1804" Description="Max AG Boost Aura - 7 Days" />
+	<Package GUID="7" ID="13" ItemSequence="4" UniqueID1="1352" UniqueID2="2233" Description="Talisman of Item Protection - 7 Days" />
 	<Package GUID="0" ID="14" ItemSequence="0" UniqueID1="1146" UniqueID2="1756" Description="Scroll Master of Health - 7 Days" />
 	<Package GUID="1" ID="14" ItemSequence="1" UniqueID1="1161" UniqueID2="1816" Description="Scroll Master of Strenghener - 7 Days" />
 	<Package GUID="2" ID="14" ItemSequence="2" UniqueID1="1152" UniqueID2="1780" Description="Scroll of Swiftness Master - 7 Days" />
@@ -59,6 +64,7 @@
 	<Package GUID="4" ID="14" ItemSequence="4" UniqueID1="1144" UniqueID2="1748" Description="Scroll Master of Defense - 7 Days" />
 	<Package GUID="5" ID="14" ItemSequence="5" UniqueID1="1158" UniqueID2="1804" Description="Max AG Boost Aura - 7 Days" />
 	<Package GUID="6" ID="14" ItemSequence="6" UniqueID1="1145" UniqueID2="1752" Description="Scroll Master of Wizardry - 7 Days" />
+	<Package GUID="7" ID="14" ItemSequence="4" UniqueID1="1352" UniqueID2="2233" Description="Talisman of Item Protection - 7 Days" />
 	<Package GUID="0" ID="15" ItemSequence="0" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
 	<Package GUID="1" ID="15" ItemSequence="1" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />
 	<Package GUID="2" ID="15" ItemSequence="2" UniqueID1="35" UniqueID2="57" Description="Talisman of Chaos Assembly" />

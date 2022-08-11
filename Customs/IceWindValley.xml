@@ -43,6 +43,10 @@
 //	Zen: Cost of registration in Zen
 //
 // ### IceWindValley::Settings ###
+//	EventStartMoveToDevias: Determines move to town mode on event start:
+//		~ 0: Only registered guild members located in Devias map
+//		~ 1: Registered guild members from any map
+//
 //	BlockMoveDevias3: If set to 1 the Devias 3 entry will be blocked
 //	HideUnregisteredPlayer: Applies invisibility buff for any player not registered to the event, making it unable to disturb the event, 0/1
 //	MaxLeaveTime: Maximum time the throne can be left unoccuped. Additionally acts as a cooldown, see PlayType setting, seconds
@@ -130,7 +134,7 @@
 <IceWindValley Enabled="0" ServerCode="0" ActiveDay="-1" Type="1">
 	<StartTime Hour="8" Minute="0" Duration="30" RegistrationHour="7" RegistrationMinute="50" RegistrationDuration="5" />
 	<ApplicationConditions MinGuildMember="1" MaxGuildMember="10" WCoin="0" GoblinPoint="0" Ruud="0" Contribution="0" Zen="0"/>
-	<Settings BlockMoveDevias3="1" HideUnregisteredPlayer="1" MaxLeaveTime="30" TotalSitdownTime="60" GuildAssistantCanSit="1" GuildMemberCanSit="1" PlayType="0" VibrationEffect="1" VibrationDuration="10" ApplyFlameEffect="1"/>
+	<Settings EventStartMoveToDevias="0" BlockMoveDevias3="1" HideUnregisteredPlayer="1" MaxLeaveTime="30" TotalSitdownTime="60" GuildAssistantCanSit="1" GuildMemberCanSit="1" PlayType="0" VibrationEffect="1" VibrationDuration="10" ApplyFlameEffect="1"/>
 
 	<CityLord EnableMap="1" Map="10" Gate="63" NPC="234" NPCMap="0" NPCX="128" NPCY="135" />
 	<CastleArea StartX="207" StartY="203" EndX="242" EndY="239" />
